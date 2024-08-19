@@ -1,0 +1,534 @@
+#blogPostTopFollowAlertContainer {
+  max-width: 1020px;
+  padding: 16px 20px 0;
+  transition: all .35s ease;
+}
+#blogPostTopFollowAlert {
+  display: flex;
+  border-radius: 10px;
+  background-color: #f5f5f7;
+}
+#blogPostTopFollowAlertCloseBtn {
+  font-size: 13px;
+  margin-right: 20px;
+  --bs-btn-color: #6e6e73;
+  -webkit-text-stroke: 1px;
+  --bs-btn-hover-color: #1d1d1f;
+}
+#blogPostTopFollowAlertText {
+  margin: 24px;
+  color: #1d1d1f;
+  font-size: 12px;
+}
+/* 文章頂部區塊 */
+#blogPostTopSection {
+  max-width: 693px;
+  padding: 48px 20px 0;
+  transition: all .35s ease;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 52px 0 16px;
+}
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.blogPost {
+  font-size: 17px;
+  font-weight: 300;
+  max-width: 693px;
+  line-height: 27px;
+  padding: 0 20px 0;
+  transition: all .35s ease;
+}
+p {
+  margin-bottom: 27px;
+}
+table {
+  font-size: 17px;
+  margin-bottom: 27px !important;
+  --bs-table-border-color: #d2d2d7;
+}
+/* 文章中的程式碼區塊 */
+.codeBlock {
+  color: black;
+  padding: 8px 14px; 
+  line-height: 24px;
+  margin-bottom: 27px;
+  border-radius: 15px;
+  background-color: #f5f5f7;
+}
+/* 文章中程式碼裡的數字（藍色）*/
+.syntaxNumbers {
+  color: #2729d8;
+}
+/* 文章中程式碼裡的文法關鍵字（粉色）*/
+.syntaxKeywords {
+  color: #ad3da4;
+}
+/* 文章中程式碼裡的自定義型別（深藍色）*/
+.syntaxTypeDeclarations {
+  color: #01638c;
+}
+/* 文章中程式碼裡的變數名稱（淺一點的深藍色）*/
+.syntaxOtherDeclarations {
+  color: #057caf;
+}
+/* 文章中程式碼裡的參數名稱（淺一點的深綠色）*/
+.syntaxProjectFunctionAndMethodNames,
+.syntaxProjectPropertiesAndGlobals {
+  color: #3e8087;
+}
+/* 文章中程式碼裡的型別名稱（深綠色）*/
+.syntaxProjectTypeNames {
+  color: #23575c;
+}
+/* 文章中程式碼裡的內建型別（深紫色）*/
+.syntaxOtherClassNames,
+.syntaxOtherTypeNames {
+  color: #4b22b0;
+}
+/* 文章中程式碼裡的方法（紫色）*/
+.syntaxOtherPropertiesAndGlobals,
+.syntaxOtherFunctionAndMethodNames,
+.syntaxOtherConstants {
+  color: #804fb8;
+}
+/* 文章中程式碼裡的文法預處理器（咖啡色）*/
+.syntaxPreprocessor {
+  color: #78492b;
+}
+/* 文章中程式碼裡的文法標題（紫色）*/
+.syntaxTitle {
+  color: #703daa;
+}
+/* 文章中程式碼裡的字串（橘色）*/
+.syntaxString {
+  color: #d12f1b;
+}
+/* 文章中程式碼裡的註解（灰色）*/
+.syntaxComment {
+  color: #707f8c;
+}
+/* 文章中程式碼裡的待輸入提示（藍底白字）*/
+.syntaxPlaceholder {
+  color: white;
+  padding: 0 2px;
+  border-radius: 5px;
+  background: #007aff;
+}
+.blogPostImgContainer {
+  padding: 0;
+  max-width: 980px;
+  transition: all .35s ease;
+}
+.blogPostCaptionContainer {
+  gap: 24px;
+  max-width: 693px;
+  padding: 0 20px 0;
+  margin-bottom: 27px;
+  transition: all .35s ease;
+}
+@keyframes shimmer {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
+.blogPostLaodingImgContainer {
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  background-size: 200% 100% !important;
+  animation: shimmer 2s linear infinite;
+  background: #fafafa linear-gradient(to right, #fafafa 0%, #e8e8ed 20%, #fafafa 40%, #fafafa 100%);
+}
+.blogPostImg {
+  border-radius: 10px;
+  pointer-events: none;
+}
+.blogPostImgCaption {
+  color: #6e6e73;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3333733333;
+}
+.reloadImageBtn {
+  width: 24px;
+  height: 24px;
+  color: #161617;
+  font-size: 13px;
+  margin-top: -4px;
+  background-color: #f5f5f7;
+  -webkit-text-stroke: 0.6px;
+  --bs-btn-hover-bg: #e8e8e8;
+}
+.blogPostTableContainer {
+  padding: 0;
+  font-size: 17px;
+  font-weight: 300;
+  max-width: 980px;
+  margin-bottom: 27px;
+  transition: all .35s ease;
+}
+.blogPostCaution {
+  padding: 16px;
+  margin-bottom: 27px;
+  border-radius: 15px;
+  --bs-border-width: 0.87px;
+  background-color: #fffbf2;
+  --bs-border-color: #9e6700;
+  box-shadow: 0 0 1px 0 #9e6700 inset, 0 0 1px 0 #9e6700;
+}
+.blogPostCautionTitle {
+  height: 26px;
+  color: #9e6700;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 6.8px;
+}
+.blogPostNotice {
+  padding: 16px;
+  margin-bottom: 27px;
+  border-radius: 15px;
+  --bs-border-width: 0.87px;
+  background-color: #f5f5f7;
+  --bs-border-color: #696969;
+  box-shadow: 0 0 1px 0 #696969 inset, 0 0 1px 0 #696969;
+}
+.blogPostNoticeTitle {
+  height: 26px;
+  color: #696969;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 6.8px;
+}
+#blogPostBottomSection {
+  max-width: 693px;
+  padding: 0 20px;
+  transition: all .35s ease;
+}
+#blogPostShareTitle {
+  color: #1d1d1f;
+  font-size: 18px;
+  font-weight: 450;
+  margin-top: 44px;
+  line-height: 23px;
+  margin-bottom: 8px;
+}
+.blogPostShareBtn {
+  cursor: pointer;
+  --bs-btn-color: #6e6e73;
+  --bs-btn-hover-color: #1d1d1f;
+  --bs-link-color-rgb: 110, 110, 115;
+  --bs-link-hover-color-rgb: 29, 29, 31;
+}
+#blogPostTitle {
+  margin: 20px 0;
+  color: #1d1d1f;
+  font-size: 45px;
+  font-weight: 550;
+  line-height: 52px;
+}
+#blogPostTopicAndDonate {
+  margin: 44px 0;
+  border-radius: 10px;
+  background-color: #f5f5f7;
+}
+#blogPostTopicAndDonateHr {
+  color: white;
+  margin: 0 36px;
+}
+#blogPostTopic,
+#blogPostDonate {
+  gap: 12px;
+  padding: 36px;
+}
+.blogPostTopicAndDonateTitle {
+  color: #1d1d1f;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 23px;
+}
+.blogPostTopicAndDonateLink {
+  line-height: 20px;
+  padding: 8px 16px;
+  width: auto !important;
+  height: auto !important;
+  transition: all .35s ease;
+  color: #1d1d1f !important;
+  min-width: auto !important;
+  font-size: 13px !important;
+  min-height: auto !important;
+  font-weight: 500 !important;
+  border-radius: 30px !important;
+}
+.blogPostTopicAndDonateLink:hover {
+  box-shadow: unset !important;
+  background: #e8e8ed !important;
+}
+.swg-button-v2-icon-dark, .swg-button-v2-icon-light {
+  margin-left: 0 !important;
+}
+#blogPostBottomHr {
+  margin: 52px 0;
+  color: #d2d2d7;
+}
+#contactsContainer {
+  max-width: 693px;
+  padding: 0 20px;
+  transition: all .35s ease;
+}
+#contactsTitle {
+  color: #1d1d1f;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 28px;
+}
+.contactsName {
+  color: #1d1d1f;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  margin-bottom: 4px;
+}
+#underContactsHr {
+  margin: 52px 0;
+  color: #d2d2d7;
+}
+#blogPostNewestPostContainer {
+  max-width: 693px;
+  padding: 0 20px;
+  margin-bottom: 48px;
+  transition: all .35s ease;
+}
+#blogPostNewestPostTitle {
+  color: #1d1d1f;
+  font-size: 21px;
+  font-weight: 450;
+  line-height: 28px;
+}
+.blogPostNewestPost {
+  padding: 32px 0;
+}
+.blogPostNewestPost:hover .blogPostNewestPostImg {
+  transform: scale(1.03);
+}
+.blogPostNewestPost:hover .blogPostNewestPostImgContainer {
+  background-color: #d5d5d5;
+}
+.blogPostNewestPostImgContainer {
+  height: 96px;
+  min-width: 171px;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+.blogPostNewestPostTextContainer {
+  padding-left: 24px;
+}
+.blogPostNewestPostTextTitle {
+  color: #1d1d1f;
+  font-size: 17px;
+  font-weight: 550;
+  line-height: 23px;
+}
+#learnMore {
+  padding: 52px 0;
+  background-color: #fbfbfd;
+}
+#learnMoreText {
+  color: #6e6e73;
+  font-size: 17px;
+  font-weight: 450;
+  line-height: 23px;
+  margin-bottom: 18px;
+}
+#learnMoreBtn {
+  color: #161617;
+  font-size: 14px;
+  font-weight: 450;
+  border-radius: 30px;
+  transition: all .3s ease;
+  background-color: #e8e8ed;
+}
+#learnMoreBtn:hover {
+  background-color: #d2d2d7;
+}
+/* 螢幕小於 1068 */
+@media only screen and (max-width: 1068px) {
+  #blogPostTopSection,
+  #blogPostBottomSection {
+    max-width: 616px;
+  }
+  #blogPostTitle {
+    font-size: 37px;
+    line-height: 44px;
+    margin: 20px 0 16px;
+  }
+  h2 {
+    font-size: 21px;
+    line-height: 25px;
+    margin: 48px 0 16px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  .blogPost {
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 616px;
+    line-height: 24px;
+  }
+  .blogPostCaptionContainer {
+    max-width: 616px;
+  }
+  p,
+  .blogPostCaptionContainer,
+  .blogPostTableContainer,
+  .codeBlock,
+  .blogPostCaution,
+  .blogPostNotice {
+    margin-bottom: 24px;
+  }
+  table {
+    font-size: 15px;
+    margin-bottom: 24px !important;
+  }
+  .blogPostImgContainer,
+  .blogPostTableContainer {
+    max-width: 692px;
+  }
+  #blogPostShareTitle {
+    font-size: 16px;
+    margin-top: 36px;
+  }
+  #blogPostTopicAndDonate {
+    margin: 36px 0;
+  }
+  #blogPostTopicAndDonateHr {
+    margin: 0 32px;
+  }
+  #blogPostTopic,
+  #blogPostDonate {
+    padding: 32px;
+  }
+  .blogPostTopicAndDonateTitle {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  #blogPostBottomHr {
+    margin: 48px 0;
+  }
+  #contactsContainer {
+    max-width: 616px;
+    margin-bottom: 32px;
+  }
+  #contactsTitle {
+    font-size: 21px;
+    line-height: 25px;
+  }
+  .contactsName {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  #underContactsHr {
+    margin: 48px 0;
+  }
+  #blogPostNewestPostContainer {
+    max-width: 616px;
+    margin-bottom: 32px;
+  }
+  #blogPostNewestPostTitle {
+    font-size: 19px;
+    line-height: 25px;
+  }
+  .blogPostNewestPostTextTitle {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  #learnMore {
+    padding: 48px 0;
+  }
+  #learnMoreText {
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 14px;
+  }
+}
+/* 螢幕小於 734 */
+@media only screen and (max-width: 734px) {
+  #blogPostTopFollowAlertContainer {
+    width: 87.5%;
+    padding: 16px 0 0;
+  }
+  #blogPostTopFollowAlert {
+    border-radius: 12px;
+  }
+  #blogPostTopSection {
+    max-width: 402px;
+    padding: 24px 20px 0;
+  }
+  h2 {
+    margin: 44px 0 16px;
+  }
+  .blogPost,
+  .blogPostCaptionContainer,
+  #blogPostBottomSection {
+    max-width: 402px;
+  }
+  .blogPostImgContainer,
+  .blogPostTableContainer {
+    max-width: 454px;
+  }
+  #blogPostTitle {
+    font-size: 29px;
+    line-height: 36px;
+  }
+  #blogPostShareTitle {
+    margin-top: 32px;
+  }
+  #blogPostTopicAndDonate {
+    margin: 32px 0;
+  }
+  #blogPostTopic,
+  #blogPostDonate {
+    padding: 24px;
+  }
+  #blogPostBottomHr {
+    margin: 44px 0;
+  }
+  #contactsContainer {
+    max-width: 402px;
+    margin-bottom: 24px;
+  }
+  #underContactsHr {
+    margin: 44px 0;
+  }
+  #blogPostNewestPostContainer {
+    max-width: 402px;
+    margin-bottom: 24px;
+  }
+  .blogPostNewestPost {
+    padding: 28px 0;
+  }
+  .blogPostNewestPostImgContainer {
+    min-width: 93px;
+    height: 93px;
+    border-radius: 12px;
+  }
+  .blogPostNewestPostTextContainer {
+    padding-left: 16px;
+  }
+  #learnMore {
+    padding: 44px 0;
+  }
+}
+/* 螢幕小於 454 */
+@media only screen and (max-width: 454px) {
+  .blogPostLaodingImgContainer,
+  .blogPostImg {
+    border-radius: 0;
+  }
+}

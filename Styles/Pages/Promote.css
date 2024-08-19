@@ -1,0 +1,222 @@
+#bigLogo {
+  color: #1d1d1f;
+  font-size: 66px;
+  font-weight: 500;
+  line-height: 64px;
+  margin-top: 120px;
+  margin-bottom: 24px;
+  transition: all .3s ease;
+}
+#bigLogoImage {
+  width: 64px;
+  height: 64px;
+}
+#subTitle {
+  color: #1d1d1f;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 31px;
+  margin-bottom: 120px;
+}
+.bigPromoteContainer {
+  width: calc(100% - 160px);
+}
+.bigPromoteImg,
+.smallPromoteImg {
+  aspect-ratio: 16/9;
+  border-radius: 24px;
+  background-size: 100% !important;
+  transition: background-size .3s ease;
+}
+.promotePageLink:hover .smallPromoteImg,
+.promotePageLink:hover .bigPromoteImg {
+  background-size: 103% !important;
+}
+.bigPromoteInfoContainer {
+  width: 980px;
+  margin-top: 28px;
+}
+.promoteTag {
+  color: #f5f5f7;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 6px;
+  line-height: 16px;
+  border-radius: 16px;
+}
+.bigPromoteTitle {
+  color: #1d1d1f;
+  font-size: 34px;
+  margin-top: 12px;
+  font-weight: 500;
+  line-height: 44px;
+}
+.bigPromoteDate {
+  color: #6e6e73;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 12px;
+  line-height: 19px;
+}
+.smallPromoteContainer {
+  width: 1020px;
+  margin-top: 60px;
+  transition: transform .3s ease;
+}
+.smallPromoteCol {
+  margin-top: 60px;
+  padding: 0 20px;
+}
+.smallPromoteInfoContainer {
+  padding: 20px 24px;
+}
+.smallPromoteTitle {
+  color: #1d1d1f;
+  font-size: 22px;
+  margin-top: 12px;
+  font-weight: 500;
+  line-height: 31px;
+}
+.smallPromoteDate {
+  color: #6e6e73;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 12px;
+  line-height: 19px;
+}
+#learnMore {
+  padding: 52px 0;
+  margin-top: 120px;
+  background-color: #fbfbfd;
+}
+#learnMoreText {
+  color: #6e6e73;
+  font-size: 17px;
+  font-weight: 450;
+  line-height: 23px;
+  margin-bottom: 18px;
+}
+#learnMoreBtn {
+  color: #161617;
+  font-size: 14px;
+  font-weight: 450;
+  border-radius: 30px;
+  transition: all .3s ease;
+  background-color: #e8e8ed;
+}
+#learnMoreBtn:hover {
+  background-color: #d2d2d7;
+}
+/* 螢幕小於 1068 */
+@media only screen and (max-width: 1068px) {
+  #bigLogo {
+    font-size: 50px;
+    line-height: 49px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+  #bigLogoImage {
+    width: 49px;
+    height: 49px;
+  }
+  #subTitle {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 100px;
+  }
+  .bigPromoteContainer {
+    min-width: 692px;
+    width: calc(100% - 128px);
+  }
+  .bigPromoteImg {
+    border-radius: 16px;
+  }
+  .bigPromoteInfoContainer {
+    width: 692px;
+    margin-top: 24px;
+  }
+  .bigPromoteTitle {
+    font-size: 28px;
+    line-height: 39px;
+  }
+  .smallPromoteContainer {
+    width: 692px;
+    margin-top: 52px;
+  }
+  .smallPromoteCol {
+    margin-top: 48px;
+    padding: 0 18px;
+  }
+  .smallPromoteTitle {
+    font-size: 18px;
+    margin-top: 8px;
+    line-height: 26px;
+  }
+  .smallPromoteDate {
+    margin-top: 8px;
+  }
+  #learnMore {
+    padding: 48px 0;
+    margin-top: 100px;
+  }
+  #learnMoreText {
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 14px;
+  }
+}
+/* 螢幕小於 734 */
+@media only screen and (max-width: 734px) {
+  #bigLogo {
+    font-size: 42px;
+    line-height: 45px;
+    margin-top: 80px;
+    margin-bottom: 16px;
+  }
+  #bigLogoImage {
+    width: 45px;
+    height: 45px;
+  }
+  #subTitle {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 80px;
+  }
+  .bigPromoteContainer {
+    width: 100%;
+    min-width: 100%;
+    max-width: 414px;
+  }
+  .bigPromoteInfoContainer {
+    margin-top: 18px;
+    width: 83.3333333333%;
+  }
+  .bigPromoteImg {
+    border-radius: 12px;
+  }
+  .bigPromoteTitle {
+    font-size: 22px;
+    line-height: 31px;
+  }
+  .bigPromoteDate {
+    margin-top: 8px;
+  }
+  .smallPromoteContainer {
+    width: 87.5%;
+    max-width: 414px;
+    margin-top: 32px;
+  }
+  .smallPromoteCol {
+    margin-top: 24px;
+    padding: 0;
+  }
+  #learnMore {
+    padding: 44px 0;
+    margin-top: 80px;
+  }
+}
+@media only screen and (max-width: 692px) {
+  .bigPromoteImg {
+    border-radius: 0;
+  }
+}

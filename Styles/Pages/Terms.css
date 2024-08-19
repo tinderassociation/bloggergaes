@@ -1,0 +1,65 @@
+#PageContainer {
+  width: 816.66px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  transition: all .35s ease;
+}
+#termsTitle {
+  color: #1d1d1f;
+  font-size: 42px;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 21.6px;
+}
+#termsSummary {
+  color: #1d1d1f;
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 43px;
+}
+.termsTitle2 {
+  color: #1d1d1f;
+  font-size: 21px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 10.8px;
+}
+.termsContext {
+  color: #1d1d1f;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 17px;
+}
+/* 螢幕小於 1068 */
+@media only screen and (max-width: 1068px) {
+  #PageContainer {
+    width: 576.66px;
+    margin-top: 50px;
+  }
+  #termsTitle {
+    font-size: 34px;
+    margin-bottom: 18px;
+  }
+  .termsTitle2 {
+    font-size: 21px;
+    margin-bottom: 9.45px;
+  }
+}
+/* 螢幕小於 734 */
+@media only screen and (max-width: 734px) {
+  #PageContainer {
+    width: 87.5%;
+    margin-top: 35px;
+  }
+  #termsTitle {
+    margin-left: 0;
+    font-size: 28px;
+    margin-bottom: 14.4px;
+  }
+  #termsSummary {
+    margin-left: 0;
+  }
+}

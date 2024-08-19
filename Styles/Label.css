@@ -1,0 +1,180 @@
+body {
+  background-color: #f5f5f7;
+}
+#labelPageTopFollowAlertContainer {
+  max-width: 1020px;
+  padding: 16px 20px 0;
+  transition: all .35s ease;
+}
+#labelPageTopFollowAlert {
+  display: flex;
+  border-radius: 10px;
+}
+#labelPageTopFollowAlertCloseBtn {
+  font-size: 13px;
+  margin-right: 20px;
+  --bs-btn-color: #6e6e73;
+  -webkit-text-stroke: 1px;
+  --bs-btn-hover-color: #1d1d1f;
+}
+#labelPageTopFollowAlertText {
+  margin: 24px;
+  color: #1d1d1f;
+  font-size: 12px;
+}
+#labelPageContainer {
+  max-width: 1020px;
+  padding: 24px 20px 0px;
+  transition: all .35s ease;
+}
+#labelPageTitle {
+  color: #1d1d1f;
+  font-size: 32px;
+  margin-top: 8px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+.labelPagePost {
+  position: relative;
+  border-radius: 16px;
+  transform: translateY(20%);
+  transition: .8s all ease;
+}
+.labelPagePost:hover .labelPagePostImg,
+.labelPagePostImgContainer:hover .labelPagePostImg {
+  transform: scale(1.03);
+}
+.labelPagePost.show {
+  opacity: 1 !important;
+  transform: translateY(0);
+}
+#labelPageFirstPostImgContainer {
+  min-height: 362px;
+  position: relative;
+}
+#labelPageFirstPostTextContainer {
+  padding: 32px;
+  width: 50%;
+}
+#labelPageFirstPostTextTitle {
+  color: #1d1d1f;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.labelPagePostImgContainer {
+  min-height: 170px;
+  position: relative;
+}
+#labelPagePostCol1, #labelPagePostCol2, #labelPagePostCol3, #labelPagePostCol4, #labelPagePostCol5, #labelPagePostCol6, #labelPagePostCol7, #labelPagePostCol8, #labelPagePostCol9 {
+  margin-top: 36px;
+}
+#labelPagePost0 {
+  margin-right: 0px;
+}
+#labelPagePost1, #labelPagePost4, #labelPagePost7 {
+  margin-right: 24px;
+  margin-left: 0px;
+}
+#labelPagePost2, #labelPagePost5, #labelPagePost8 {
+  margin-right: 12px;
+  margin-left: 12px;
+}
+#labelPagePost3, #labelPagePost6, #labelPagePost9 {
+  margin-right: 0px;
+  margin-left: 24px;
+}
+#labelPageReadHistoryPostBtn {
+  color: #1d1d1f;
+  font-size: 15px;
+  margin-top: 32px;
+  padding-top: 10px;
+  margin-bottom: 80px;
+  border-radius: 30px;
+  padding-bottom: 9px;
+  transition: all .3s ease;
+  border: 2px solid #1d1d1f;
+}
+#labelPageReadHistoryPostBtn:hover {
+  color: #f5f5f7;
+  background-color: #1d1d1f;
+}
+/* 螢幕小於 991.98 */
+@media only screen and (max-width: 991.98px) {
+  #labelPageContainer {
+    max-width: 732px;
+  }
+  #labelPageTitle {
+    font-size: 28px;
+    margin-top: 4px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+  #labelPageFirstPostImgContainer,
+  .labelPagePostImgContainer {
+    min-height: 187px;
+  }
+  #labelPageFirstPostTextContainer {
+    padding: 24px;
+  }
+  #labelPageFirstPostTextTitle {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+  #labelPagePostCol1 {
+    margin-top: 0px;
+  }
+  #labelPagePostCol2, #labelPagePostCol3, #labelPagePostCol4, #labelPagePostCol5, #labelPagePostCol6, #labelPagePostCol7, #labelPagePostCol8, #labelPagePostCol9 {
+    margin-top: 24px;
+  }
+  #labelPagePost0, #labelPagePost2, #labelPagePost4, #labelPagePost6, #labelPagePost8 {
+    margin-left: 0px;
+    margin-right: 12px;
+  }
+  #labelPagePost1, #labelPagePost3, #labelPagePost5, #labelPagePost7, #labelPagePost9 {
+    margin-left: 12px;
+    margin-right: 0px;
+  }
+  #labelPageReadHistoryPostBtn {
+    margin-top: 28px;
+    margin-bottom: 64px;
+  }
+}
+/* 螢幕小於 767.98 */
+@media (max-width: 767.98px) {
+  #labelPageTopFollowAlertContainer {
+    width: 87.5%;
+    padding: 12px 0 0;
+  }
+  #labelPageTopFollowAlert {
+    border-radius: 12px;
+  }
+  #labelPageContainer {
+    max-width: 406px;
+    padding: 12px 20px 0px;
+  }
+  #labelPageTitle {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .labelPagePost {
+    border-radius: 12px;
+  }
+  #labelPageFirstPostImgContainer,
+  .labelPagePostImgContainer {
+    min-height: 158px;
+  }
+  #labelPagePostCol1 {
+    margin-top: 24px;
+  }
+  #labelPagePost0, #labelPagePost1, #labelPagePost2, #labelPagePost3, #labelPagePost4, #labelPagePost5, #labelPagePost6, #labelPagePost7, #labelPagePost8, #labelPagePost9 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #labelPageReadHistoryPostBtn {
+    margin-top: 24px;
+    margin-bottom: 52px;
+  }
+}

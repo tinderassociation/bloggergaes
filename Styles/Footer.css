@@ -1,0 +1,77 @@
+#footerBrand {
+  font-size: 14px;
+  color: #515154;
+}
+#footerBrand:hover {
+  color: #1d1d1f;
+}
+.breadcrumbItem {
+  color: #424245;
+  font-size: 12px;
+}
+.breadcrumbItemLink {
+  font-size: 12px;
+  color: #515154;
+}
+.breadcrumbItemLink:hover {
+  color: #1d1d1f;
+}
+#wideScreenFooter {
+  font-size: 12px;
+  line-height: 16px;
+}
+.wideScreenFooterLink {
+  color: #000000b8;
+  font-weight: 350;
+  margin-bottom: 9.6px;
+}
+#smallScreenFooter {
+  display: none;
+}
+.smallScreenFooterLink {
+  color: #000000b8;
+  padding: 6px 14px;
+}
+#bottomFooter {
+  padding-top: 34px;
+  padding-bottom: 21px;
+}
+#wideScreenBottomFooterDivider {
+  color: #d2d2d7;
+  margin: 8px 0px 7px;
+}
+#wideScreenFooterRegion {
+  color: #6e6e73;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+}
+#smallScreenFooterRegion {
+  display: none;
+  color: #6e6e73;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 12px 0px;
+}
+.bottomFooterLink {
+  color: #000000b8;
+  margin-right: 7px;
+  padding-right: 10px;
+  --bs-border-color: #86868b;
+}
+/* 螢幕小於 833 */
+@media only screen and (max-width: 833px) {
+  #wideScreenBottomFooterDivider,
+  #wideScreenFooterRegion,
+  #wideScreenFooter {
+    display: none;
+  }
+  #smallScreenFooter,
+  #smallScreenFooterRegion {
+    display: block;
+  }
+  #bottomFooter {
+    padding-top: 17px;
+    padding-bottom: 19px;
+  }
+}

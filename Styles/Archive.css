@@ -1,0 +1,158 @@
+#archiveFilterContainer {
+  width: 980px;
+  padding: 32px 0px;
+}
+#archivePageContainer {
+  width: 980px;
+  --bs-border-color: #d2d2d7;
+}
+#archiveFilterYearBtn {
+  height: 40px;
+  max-width: 255px;
+  margin-right: 6px;
+  border-radius: 7px;
+}
+#archiveFilterMonthBtn {
+  height: 40px;
+  max-width: 255px;
+  margin-left: 6px;
+  border-radius: 7px;
+}
+#archiveFilterYearBtnIcon,
+#archiveFilterMonthBtnIcon {
+  color: #86868b;
+  font-size: 10px;
+}
+#archiveFilterYearList,
+#archiveFilterMonthList {
+  top: 40px;
+  padding: 8px;
+  overflow: scroll;
+  max-height: 334px;
+  --bs-border-color: #f5f5f7;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  box-shadow: 0 20px 20px 0 #00000033;
+}
+.archiveFilterLink {
+  padding: 8px;
+  --bs-link-color-rgb: 29, 29, 31;
+  --bs-link-hover-color-rgb: 0, 102, 204;
+}
+.archivePagePostDateTitle {
+  color: #1d1d1f;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+  margin: 52px 0 16px;
+}
+.archivePagePost {
+  padding: 32px 0px;
+  --bs-border-color: #d2d2d7;
+}
+.archivePagePostImg {
+  width: 295px;
+  height: 166px;
+  border-radius: 16px;
+  background-color: #fafafa;
+}
+.archivePagePostTextContainer {
+  margin-left: 32px;
+}
+.archivePagePostTitle {
+  color: #1d1d1f;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 8px 0px 12px;
+}
+.archivePagePostDate {
+  color: #6e6e73;
+  font-size: 13px;
+  font-weight: 450;
+  line-height: 20px;
+}
+#archivePageResultEndText {
+  color: #1d1d1f;
+  font-size: 17px;
+  margin: 60px 0px;
+  font-weight: 400;
+  line-height: 25px;
+}
+#archivePageProgressView {
+  z-index: 1022;
+  color: #0066cc;
+  background-color: #ffffffcc;
+}
+#archivePageResultNone {
+  color: #1d1d1f;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 48px;
+}
+/* 螢幕小於 1068 */
+@media only screen and (max-width: 1068px) {
+  #archiveFilterContainer,
+  #archivePageContainer {
+    width: 692px;
+  }
+  .archivePagePostDateTitle {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 48px 0 16px;
+  }
+  .archivePagePost {
+    padding: 24px 0px;
+  }
+  .archivePagePostImg {
+    width: 264px;
+    height: 149px;
+  }
+  .archivePagePostTextContainer {
+    margin-left: 24px;
+  }
+  .archivePagePostTitle {
+    font-size: 19px;
+    line-height: 25px;
+  }
+  #archivePageResultNone {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 40px;
+  }
+}
+/* 螢幕小於 734 */
+@media only screen and (max-width: 734px) {
+  #archiveFilterContainer {
+    width: 87.5%;
+    padding: 24px 0px;
+  }
+  #archivePageContainer {
+    width: 87.5%;
+  }
+  .archivePagePostDateTitle {
+    font-size: 19px;
+    line-height: 25px;
+    margin: 44px 0 16px;
+  }
+  .archivePagePostImg {
+    width: 106px;
+    height: 60px;
+    border-radius: 7px;
+  }
+  .archivePagePostTitle {
+    font-size: 15px;
+    line-height: 21px;
+    margin: 4px 0px 8px;
+  }
+  .archivePagePostDate {
+    line-height: 18px;
+  }
+  #archivePageResultEndText {
+    margin: 45px 0px;
+  }
+  #archivePageResultNone {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

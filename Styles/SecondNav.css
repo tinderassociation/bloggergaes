@@ -1,0 +1,103 @@
+#SecondNav {
+  z-index: 1021;
+}
+/* 上方導覽列二 */
+#secondNav {
+  height: 50px;
+  transition: all .4s ease;
+  backdrop-filter: blur(20px);
+  background-color: #ffffffb3;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+/* 上方導覽列二容器 */
+#secondNavContainer {
+  gap: 24px;
+  padding: 0px 19px;
+  max-width: 1024px;
+  transition: all .35s ease;
+}
+#secondNavTitle {
+  font-size: 19px;
+  font-weight: 500;
+}
+/* 寬螢幕上方導覽列二，右方的「搜尋 XcodeProject」按鈕 */
+#secondNavSearchBtn {
+  font-size: 11px;
+  font-weight: 300;
+  border-radius: 30px;
+  --bs-btn-bg: #e8e8ed;
+  padding: 5px 12px 4px;
+  --bs-btn-color: #1d1d1f;
+  transition: all .3s ease;
+  --bs-btn-hover-bg: #d2d2d7;
+  --bs-btn-hover-color: #1d1d1f;
+}
+.secondNavLink {
+  font-size: 12px;
+  font-weight: 400;
+  transition: all .35s ease;
+  --bs-link-color-rgb: 29, 29, 31;
+  --bs-link-hover-color-rgb: 0, 102, 204;
+}
+/* 上方導覽列二展開的熱門主題區塊裡的搜尋框 */
+#hotTopicsSearchBar {
+  font-size: 19px;
+  font-weight: 600;
+}
+/* 上方導覽列二展開的熱門主題區塊 */
+#hotTopics {
+  z-index: 1022;
+  background-color: #ffffffe6;
+}
+#hotTopicsContainer {
+  max-width: 1024px;
+  padding: 33px 22px 64px;
+}
+/* 上方導覽列二展開的熱門主題連結 */
+.hotTopicLink {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 16px;
+  padding-left: 0px;
+  --bs-link-color-rgb: 29, 29, 31;
+  --bs-link-hover-color-rgb: 0, 102, 204;
+}
+/* 熱門話題展開時的暗掉背景 */
+#hotTopicsDimBackground {
+  display: none;
+  z-index: 1021;
+  position: absolute;
+  backdrop-filter: blur(20px);
+  background-color: #ffffffcc;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+/* 螢幕大於 768 */
+@media only screen and (min-width: 768px) {
+  /* 上方導覽列二變矮 */
+  #secondNav {
+    height: 48px;
+  }
+  /* 上方導覽列二容器左右間距變大 */
+  #secondNavContainer {
+    padding: 0px 22px;
+  }
+}
+/* 螢幕小於 768 */
+@media only screen and (max-width: 767.98px) {
+  /* 上方導覽列二長高 */
+  #secondNav {
+    height: 52px;
+  }
+  /* 上方導覽列二容器左右間距變小 */
+  #secondNavContainer {
+    padding: 0px 16px;
+  }
+  #hotTopicsContainer {
+    padding: 4px 22px 64px;
+  }
+  /* 上方導覽列二展開的熱門主題連結字變大 */
+  .hotTopicLink {
+    font-size: 17px;
+    margin-top: 14px;
+  }
+}

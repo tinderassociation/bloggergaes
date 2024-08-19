@@ -1,0 +1,180 @@
+/* 最上方導覽列 */
+#mainNav {
+  height: 44px;
+  z-index: 1023;
+  line-height: 44px;
+  background-color: #f3f3f3;
+  transition: all .35s ease, visibility 0s ease;
+}
+/* 最上方導覽列中的網站標題 */
+.navbar-brand {
+  font-weight: 480;
+  padding: 0px 10px;
+  --bs-navbar-brand-color: #303030;
+  --bs-navbar-brand-font-size: 20px;
+  --bs-navbar-brand-hover-color: black;
+}
+/* 寬螢幕最上方導覽列中的連結容器 */
+#wideScreenNavLinks {
+  font-size: 16px;
+  font-weight: 300;
+}
+/* 寬螢幕最上方導覽列中的連結 */
+.nav-link {
+  --bs-nav-link-padding-y: 0;
+  --bs-nav-link-color: #303030;
+  --bs-nav-link-padding-x: 10px;
+  --bs-nav-link-hover-color: black;
+}
+/* 寬螢幕最上方導覽列中的搜尋表單 */
+#wideScreenSearchForm {
+  height: 44px;
+  display: none;
+}
+/* 寬螢幕最上方導覽列中的搜尋框 */
+#wideScreenSearchBar {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 300;
+  padding-left: 1px;
+}
+#wideScreenSearchBar::placeholder {
+  color: #6e6e73;
+  font-size: 18px;
+  height: 20.87px;
+  font-weight: 300;
+}
+#wideScreenSearchBar::-webkit-search-cancel-button,
+#wideScreenSearchBar::-webkit-search-results-button {
+  -webkit-appearance: none;
+}
+/* 寬螢幕最上方導覽列右方的放大鏡（搜尋時會變叉叉）*/
+#wideScreenSearchBtn {
+  color: #828282;
+  font-size: 18px;
+  padding: 0px 10px;
+}
+#wideScreenSearchBtn .bi-search:hover {
+  color: #666666;
+}
+#wideScreenSearchBtn .bi-x-lg:hover {
+  color: black;
+}
+/* 寬螢幕搜尋時的快速連結區塊 */
+#wideScreenSearchQuickLinks {
+  top: 44px;
+  padding: 23px 40px 18px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+/* 寬螢幕搜尋時的快速連結 */
+.wideScreenSearchQuickLink {
+  height: 28px;
+  color: #1d1d1f;
+  font-size: 14px;
+  margin: 6px -32px;
+  line-height: 28px;
+  padding-left: 52px;
+}
+.wideScreenSearchQuickLink:hover {
+  color: #0066cc;
+  background-color: #f5f5f7;
+}
+/* 寬螢幕搜尋時的暗掉背景 */
+#wideScreenSearchDimBackground {
+  display: none;
+  z-index: 1022;
+  position: absolute;
+  background-color: #0000007c;
+}
+/* 小螢幕最上方導覽列中的選單按鈕 */
+#hamburgerBtn {
+  font-size: 26px;
+  --bs-btn-color: #303030;
+  --bs-btn-hover-color: black;
+}
+/* 小螢幕展開全螢幕的導覽列 */
+#fullScreenNav {
+  z-index: 1021;
+}
+/* 小螢幕展開全螢幕導覽列的搜尋表單 */
+#smallScreenSearchForm {
+  padding: 0px 10px 16px;
+  transition: all .35s ease;
+}
+/* 小螢幕展開全螢幕導覽列的搜尋放大鏡 */
+#smallScreenSearchIcon {
+  color: #a5a5a5;
+  font-size: 17px;
+  padding: 6px 8px;
+  transition: all .35s ease;
+  background-color: #d7d7d7;
+}
+/* 小螢幕展開全螢幕導覽列的搜尋框 */
+#smallScreenSearchBar {
+  color: #333333;
+  font-size: 17px;
+  font-weight: 250;
+  line-height: 21px;
+  padding-left: 1px;
+  background-color: #d7d7d7;
+}
+#smallScreenSearchBar::placeholder {
+  color: #6e6e73;
+}
+#smallScreenSearchBar::-webkit-search-cancel-button,
+#smallScreenSearchBar::-webkit-search-results-button {
+  -webkit-appearance: none;
+}
+/* 小螢幕展開全螢幕導覽列搜尋中的取消按鈕 */
+#smallScreenSearchCancelBtn {
+  width: 0;
+  padding: 0;
+  color: #0066cc;
+  font-size: 17px;
+  font-weight: 300;
+  visibility: hidden;
+  transition: all .35s ease, visibility 0s ease;
+}
+/* 小螢幕展開全螢幕導覽列搜尋中的快速連結標題 */
+#smallScreenSearchQuickLinksTitle {
+  height: 0;
+  margin: 0px;
+  color: #86868b;
+  font-size: 12px;
+  font-weight: 250;
+  line-height: 16px;
+  visibility: hidden;
+  transition: all .35s ease, visibility 0s ease;
+}
+/* 小螢幕展開全螢幕導覽列的快速連結 */
+.smallScreenSearchQuickLink {
+  height: 45px;
+  color: #333333;
+  font-size: 17px;
+  line-height: 45px;
+  transition: all .25s ease;
+}
+.smallScreenSearchQuickLink.hoverBlack:hover {
+  color: black;
+}
+.smallScreenSearchQuickLink.hoverBlue:hover {
+  color: #2897ff;
+}
+/* 小螢幕展開全螢幕導覽列的快速連結分隔線 */
+.quickLinkHr {
+  color: #d7d7d7;
+  transition: all .35s ease;
+}
+/* 螢幕大於 768：寬螢幕導覽連結顯示 */
+@media only screen and (min-width: 768px) {
+  #mainNav {
+    height: 44px;
+  }
+}
+/* 螢幕小於 768：寬螢幕導覽連結隱藏 */
+@media only screen and (max-width: 767.98px) {
+  #mainNav {
+    height: 48px;
+  }
+}

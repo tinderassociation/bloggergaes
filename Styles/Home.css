@@ -1,0 +1,357 @@
+body {
+  background-color: #f5f5f7;
+}
+#homeTopFollowAlertContainer {
+  max-width: 1020px;
+  padding: 16px 20px 0;
+  transition: all .35s ease;
+}
+#homeTopFollowAlert {
+  display: flex;
+  border-radius: 10px;
+}
+#homeTopFollowAlertCloseBtn {
+  font-size: 13px;
+  margin-right: 20px;
+  --bs-btn-color: #6e6e73;
+  -webkit-text-stroke: 1px;
+  --bs-btn-hover-color: #1d1d1f;
+}
+#homeTopFollowAlertText {
+  margin: 24px;
+  color: #1d1d1f;
+  font-size: 12px;
+}
+/* 首頁容器 */
+#homeContainer {
+  width: auto;
+  max-width: 980px;
+  padding: 24px 0 80px;
+  transition: all .35s ease;
+}
+/* 標題「最新文章」*/
+#homeNewestPostTitle {
+  color: #1d1d1f;
+  font-size: 28px;
+  font-weight: 450;
+  margin-bottom: 24px;
+}
+/* 最新文章 */
+.homeNewPost {
+  position: relative;
+  border-radius: 16px;
+  transform: translateY(20%);
+  transition: .8s all ease;
+}
+.homeNewPost:hover .homeNewPostImg,
+.homePopularPost:hover .homePopularPostImg {
+  transform: scale(1.03);
+}
+.homeNewPost.show,
+.homePopularPost.show {
+  opacity: 1 !important;
+  transform: translateY(0);
+}
+/* 最新文章的圖片容器 */
+#homeNewestPostImgContainer {
+  min-height: 362px;
+  background-color: #fafafa;
+}
+/* 最新文章的文字容器 */
+#homeNewestPostTextContainer {
+  padding: 32px;
+  width: 50%;
+}
+/* 最新文章的文字標題 */
+#homeNewestPostTextTitle {
+	color: #1d1d1f;
+  font-size: 28px;
+  font-weight: 550;
+  line-height: 36px;
+}
+/* 最新文章（1～10）*/
+.homeNewPostCol {
+  margin-top: 36px;
+}
+#homeNewPost1, #homeNewPost3 {
+  margin-right: 18px;
+}
+#homeNewPost2, #homeNewPost4 {
+  margin-left: 18px;
+}
+.homeNewPost1-4ImgContainer {
+  min-height: 266px;
+  background-color: #fafafa;
+}
+.homeNewPost1-4TextContainer {
+  padding: 32px;
+}
+.homeNewPost1-4Title {
+  color: #1d1d1f;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.homeNewPost1-4Date {
+	color: #6e6e73;
+  font-size: 14px;
+  font-weight: 450;
+  margin-top: 12px;
+  line-height: 18px;
+}
+#homeNewPost5, #homeNewPost8 {
+  margin-left: 0;
+  margin-right: 24px;
+}
+#homeNewPost6, #homeNewPost9 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+#homeNewPost7, #homeNewPost10 {
+  margin-left: 24px;
+  margin-right: 0;
+}
+.homeNewPost5-10ImgContainer {
+  min-height: 170px;
+  background-color: #fafafa;
+}
+/* 首頁中間大廣告容器 */
+#homepageAdContainer {
+  width: 980px;
+  padding: 80px 0 75px;
+}
+#homepageAdTitle {
+  font-size: 48px;
+  height: 37px;
+  line-height: 37px;
+}
+#homepageAdSubTitle {
+  font-size: 15px;
+  margin-top: 16px;
+  font-weight: 500;
+  line-height: 1.23536;
+}
+#homePopularPostContainer {
+  width: 87.5%;
+  max-width: 980px;
+  padding: 80px 0 80px;
+}
+#homePopularPostTitle {
+	color: #1d1d1f;
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+.homePopularPost {
+  margin-top: 32px;
+  position: relative;
+  padding-bottom: 32px;
+  transition: .8s all ease;
+  transform: translateY(20%);
+}
+.homePopularPostImgContainer {
+  height: 132px;
+  min-width: 132px;
+  border-radius: 16px;
+  background-color: white;
+}
+.homePopularPostTextContainer {
+  padding-left: 24px;
+}
+.readAllBtn {
+  color: #1d1d1f;
+  font-size: 15px;
+  margin-top: 40px;
+  padding-top: 10px;
+  border-radius: 30px;
+  padding-bottom: 9px;
+  transition: all .3s ease;
+  border: 2px solid #1d1d1f;
+}
+.readAllBtn:hover {
+  color: #f5f5f7;
+  background-color: #1d1d1f;
+}
+/* 螢幕小於 1068 */
+@media only screen and (max-width: 1068px) {
+  /* 首頁容器 */
+  #homeContainer {
+    max-width: 692px;
+    padding: 40px 0 64px;
+  }
+  /* 標題「最新文章」*/
+  #homeNewestPostTitle {
+    font-size: 25px;
+    margin-bottom: 16px;
+  }
+  /* 最新文章的圖片容器 */
+  #homeNewestPostImgContainer {
+    min-height: 255px;
+  }
+  #homeNewestPostTextContainer,
+  .homeNewPost1-4TextContainer {
+    padding: 24px;
+  }
+  /* 最新文章的文字標題 */
+  #homeNewestPostTextTitle {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  /* 最新文章（1～10）*/
+  .homeNewPostCol {
+    margin-top: 24px;
+  }
+  #homeNewPost1, #homeNewPost3 {
+    margin-right: 12px;
+  }
+  #homeNewPost2, #homeNewPost4 {
+    margin-left: 12px;
+  }
+  .homeNewPost1-4ImgContainer {
+    min-height: 187px;
+  }
+  .homeNewPost1-4Title {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  .homeNewPost1-4Date {
+    margin-top: 8px;
+  }
+  #homeNewPost5, #homeNewPost8 {
+    margin-left: 0;
+    margin-right: 16px;
+  }
+  #homeNewPost6, #homeNewPost9 {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  #homeNewPost7, #homeNewPost10 {
+    margin-left: 16px;
+    margin-right: 0;
+  }
+  /* 首頁中間大廣告容器 */
+  #homepageAdContainer {
+    width: 692px;
+    padding: 64px 0 59px;
+  }
+  #homepageAdTitle {
+    font-size: 43px;
+    height: 34px;
+    line-height: 34px;
+  }
+  #homepageAdSubTitle {
+    font-size: 12px;
+    margin-top: 12px;
+    line-height: 1.28577;
+  }
+  #homePopularPostContainer {
+    max-width: 692px;
+    padding: 64px 0 64px;
+  }
+  #homePopularPostTitle {
+    font-size: 25px;
+    margin-bottom: 4px;
+  }
+  .homePopularPost {
+    margin-top: 24px;
+    padding-bottom: 24px;
+  }
+  .readAllBtn {
+    margin-top: 28px;
+  }
+}
+/* 螢幕小於 991.98 */
+@media only screen and (max-width: 991.98px) {
+  #homeNewPost5, #homeNewPost7, #homeNewPost9 {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+  #homeNewPost6, #homeNewPost8, #homeNewPost10 {
+    margin-left: 12px;
+    margin-right: 0;
+  }
+  .homeNewPost5-10ImgContainer {
+    min-height: 187px;
+  }
+  #homePopularPost6 {
+    --bs-border-width: 1px !important;
+  }
+  .homePopularPostImgContainer {
+    margin-left: 0 !important;
+  }
+  .homePopularPostTextContainer {
+    margin-right: 0 !important;
+  }
+}
+/* 螢幕小於 767.98 */
+@media only screen and (max-width: 767.98px) {
+  #homeTopFollowAlertContainer {
+    width: 87.5%;
+    padding: 16px 0 0;
+  }
+  #homeTopFollowAlert {
+    border-radius: 12px;
+  }
+  /* 首頁容器 */
+  #homeContainer {
+    width: 87.5%;
+    max-width: 366px;
+    padding: 12px 0 40px;
+  }
+  /* 標題「最新文章」*/
+  #homeNewestPostTitle {
+    font-size: 21px;
+  }
+  /* 最新文章 */
+  .homeNewPost {
+    border-radius: 12px;
+  }
+  #homeNewestPostImgContainer,
+  .homeNewPost1-4ImgContainer,
+  .homeNewPost5-10ImgContainer {
+    min-height: 158px;
+  }
+  /* 最新文章的文字標題 */
+  #homeNewestPostTextTitle {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+  #homeNewPost1, #homeNewPost3, #homeNewPost2, #homeNewPost4,
+  #homeNewPost5, #homeNewPost6, #homeNewPost7, #homeNewPost8, #homeNewPost9, #homeNewPost10 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* 首頁中間大廣告容器 */
+  #homepageAdContainer {
+    width: 87.5%;
+    padding: 40px 0 35px;
+  }
+  #homepageAdTitle {
+    height: 28px;
+    font-size: 36px;
+    line-height: 28px;
+  }
+  #homepageAdSubTitle {
+    margin-top: 8px;
+  }
+  #homePopularPostContainer {
+    max-width: 366px;
+    padding: 40px 0 52px;
+  }
+  #homePopularPostTitle {
+    font-size: 21px;
+    margin-bottom: 0px;
+  }
+  .homePopularPostImgContainer {
+    height: 105px;
+    min-width: 105px;
+    border-radius: 12px;
+  }
+  .homePopularPostTextContainer {
+		padding-left: 16px;
+  }
+  .readAllBtn {
+    margin-top: 24px;
+  }
+}

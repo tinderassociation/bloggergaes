@@ -1,0 +1,34 @@
+#PageContainer {
+  max-width: 980px;
+  margin-bottom: 60px;
+  transition: all .35s ease;
+}
+#sitemapTitle {
+  height: 24px;
+  margin: 14px 0;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 24px;
+}
+#sitemapContainer {
+  margin-top: 39px;
+}
+/* 螢幕小於 1068 */
+@media only screen and (max-width: 1068px) {
+  #PageContainer {
+    width: 692px;
+  }
+}
+/* 螢幕小於 734 */
+@media only screen and (max-width: 734px) {
+  #PageContainer {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  #sitemapTitle {
+    font-size: 17px;
+  }
+  #sitemapContainer {
+    margin-top: 19px;
+  }
+}

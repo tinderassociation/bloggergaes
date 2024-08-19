@@ -1,0 +1,86 @@
+#PageContainer {
+  max-width: 980px;
+  margin-bottom: 84px;
+  transition: all .35s ease;
+}
+h1 {
+  height: 52px;
+  color: #1d1d1f;
+  font-size: 42px;
+  font-weight: 500;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 21.6px;
+}
+.privacySummary {
+  color: #1d1d1f;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 21px;
+}
+h2 {
+  color: #1d1d1f;
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 32.93px;
+  margin-bottom: 32.93px;
+}
+.privacyContext {
+  color: #1d1d1f;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 17px;
+}
+#Privacy1Ｘ, #Privacy2Ｘ, #Privacy3Ｘ, #Privacy4Ｘ, #Privacy5Ｘ, #Privacy6Ｘ, #Privacy7Ｘ {
+  color: #86868b;
+  font-size: 27px;
+  margin-top: 26.93px;
+  margin-bottom: 26.93px;
+  -webkit-text-stroke: 1px;
+  transition: transform .3s ease;
+}
+.privacyTitleBtn:hover h2,
+.privacyTitleBtn:hover .bi {
+  color: #0066cc !important;
+}
+/* 螢幕小於 1068 */
+@media only screen and (max-width: 1068px) {
+  #PageContainer {
+    width: 692px;
+  }
+  h1 {
+    height: 25px;
+    font-size: 34px;
+    margin-top: 50px;
+    line-height: 25px;
+    margin-bottom: 18px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+}
+/* 螢幕小於 734 */
+@media only screen and (max-width: 734px) {
+  #PageContainer {
+    width: 90%;
+  }
+  h1 {
+    height: 39px;
+    margin-left: 0;
+    font-size: 28px;
+    margin-top: 35px;
+    line-height: 39px;
+  }
+  .privacySummary {
+    margin-left: 0;
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 19px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+}

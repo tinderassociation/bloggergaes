@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html lang='zh-TW' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'> 
+
+<head>
+  <meta charset='UTF-8'/>
+  <meta content='Ricky Chuang' name='author'/>
+  <meta content='Copyright © 2022 看我所見' name='copyright'/>
+  <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+  <b:include data='blog' name='all-head-content'/>
+  
+  <link expr:href='data:blog.url' rel='canonical'/>
+  
+  <!-- Bootstrap CSS -->
+  <link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css' integrity='sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0' rel='stylesheet'/>
+  <link defer='true' href='https://www.blogger.com/static/v1/widgets/1324390690-widget_css_bundle.css' rel='stylesheet'/>
+  <b:skin><![CDATA[]]></b:skin>
+  <style>
+    ::selection { background-color: rgb(255, 229, 209); }
+    
+    a { text-decoration: none; }
+    
+    .text-theme-color { color: #0d6efd; }
+    
+    h1, h2, h3 { font-weight: bold; }
+    h2 {
+      margin-top: 1.75rem;
+      margin-bottom: 1rem;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .item-snippet { text-align: justify; }
+    
+    .sticky-top, .navbar, .dropdown-menu {
+      background-color: rgb(37,41,47);
+      border-color:rgb(81,90,98);
+    }
+    
+    tr { background-color: rgb(247,248,250); }
+    tr:hover { background-color: rgb(247,248,250); }
+    
+    #navbarDropdown:hover {
+      background-color:rgb(71,77,87);
+    }
+    #navbarDropdown:focus {
+      outline: none !important;
+    }
+    .dropdown-item { color: white; }
+    .dropdown-item:hover { color: black; }
+    
+    .navbar-brand:hover, .navbar-nav &gt; a.nav-link:hover {
+      color: orange !important;
+    }
+	
+    .yt-red {
+      color: red;
+      border-color: red;
+    }
+    .yt-red:hover {
+      background-color: red;
+      border-color: red;
+    }
+    .ig-orange {
+      color: orange;
+      border-color: orange;
+    }
+    .ig-orange:hover {
+      background-color: orange;
+      border-color: orange;
+    }
+    .line-green {
+      color: #03C755;
+      border-color: #03C755;
+    }
+    .line-green:hover {
+      border-color: #03C755;
+      background-color: #03C755;
+    }
+    .twitter-blue {
+      color: #1EA1F1;
+      border-color: #1EA1F1;
+    }
+    .twitter-blue:hover {
+      border-color: #1EA1F1;
+      background-color: #1EA1F1;
+    }
+    .facebook-blue {
+      color: #2D88FF;
+      border-color: #2D88FF;
+    }
+    .facebook-blue:hover {
+      border-color: #2D88FF;
+      background-color: #2D88FF;
+    }
+    .purple {
+      color: #A96FFF;
+      border-color: #A96FFF;
+    }
+    .purple:hover {
+      border-color: #A96FFF;
+      background-color: #A96FFF;
+    }
+    .GitHub-white {
+      color: rgb(205,217,229);
+      border-color: rgb(205,217,229);
+    }
+    .GitHub-white:hover {
+      color: rgb(45,51,59);
+      border-color: rgb(205,217,229);
+      background-color: rgb(205,217,229);
+    }
+    .Share-btn {
+      color: rgb(71,77,87);
+      border-color: rgb(71,77,87);
+    }
+    .Share-btn:hover {
+      color: white;
+      border-color: rgb(71,77,87);
+      background-color: rgb(71,77,87);
+    }
+    
+    .badge {
+      color: rgb(29,111,220);
+      background-color: rgb(221,244,255);
+    }
+    .badge:hover {
+      color: white;
+      background-color: rgb(29,111,220);
+    }
+    
+    .position-sticky &gt; .card {
+      background-color:rgb(247,248,250);
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      body { background-color: rgb(34,39,46); }
+      
+      ::selection {
+        color: white;
+        background-color: rgb(255, 229, 209);
+      }
+      
+      tr {
+        color: rgb(205,217,229);
+    	background-color: rgb(45,51,59);
+    	border-color: rgb(205,217,229);
+      }
+      tr:hover {
+    	color: rgb(45,51,59);
+    	background-color: rgb(205,217,229);
+    	border-color: rgb(45,51,59);
+      }
+      
+      .sticky-top, .navbar, .dropdown-menu {
+    	background-color: rgb(45,51,59);
+      }
+      
+      .navbar-nav &gt; a.active {
+        color: rgb(205,217,229) !important;
+      }
+      
+      .card {
+        color: rgb(205,217,229);
+    	background-color: rgb(34,39,46);
+    	border-color: rgb(67,76,86);
+      }
+      
+      a, .btn-outline-primary {
+    	color: rgb(84,155,245);
+    	border-color: rgb(84,155,245);
+      }
+      
+      .text-theme-color { color: rgb(84,155,245); }
+      
+      .btn-outline-primary:hover {
+    	border-color: rgb(84,155,245);
+    	background-color: rgb(84,155,245);
+      }
+      .badge {
+        color: rgb(84,155,245);
+        background-color: rgb(39,52,73);
+      }
+      .badge:hover {
+        color: white;
+        background-color: rgb(84,155,245);
+      }
+      
+      .position-sticky &gt; .card {
+    	background-color:rgb(45,51,59);
+      }
+      
+      .Share-btn {
+        color: rgb(205,217,229);
+        border-color: rgb(205,217,229);
+      }
+      .Share-btn:hover {
+        color: rgb(34,39,46);
+        border-color: rgb(205,217,229);
+        background-color: rgb(205,217,229);
+      }
+    }
+  </style>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag(&#39;js&#39;, new Date());
+    gtag(&#39;config&#39;, &#39;UA-145425142-1&#39;);
+  </script>
+  <script>
+    /*<![CDATA[*/ var uri = window.location.toString(); if (uri.indexOf("%3D","%3D") > 0) { var clean_uri = uri.substring(0, uri.indexOf("%3D")); window.history.replaceState({}, document.title, clean_uri);} var uri = window.location.toString(); if (uri.indexOf("%3D%3D","%3D%3D") > 0) { var clean_uri = uri.substring(0, uri.indexOf("%3D%3D")); window.history.replaceState({}, document.title, clean_uri);} var uri = window.location.toString(); if (uri.indexOf("&m=1","&m=1") > 0) { var clean_uri = uri.substring(0, uri.indexOf("&m=1")); window.history.replaceState({}, document.title, clean_uri); } var uri = window.location.toString(); if (uri.indexOf("?m=1","?m=1") > 0) { var clean_uri = uri.substring(0, uri.indexOf("?m=1"));window.history.replaceState({}, document.title, clean_uri);}; var protocol=window.location.protocol.replace(/\:/g,''); if(protocol=='http'){ var url=window.location.href.replace('http','https'); window.location.replace(url);} /*]]>*/
+  </script>
+</head>
+
+<body b:css='false' b:js='false' oncopy='return false'>
+  <header class='sticky-top'>
+    <div class='container'>
+      <nav class='navbar navbar-expand-xl navbar-dark'>
+        <div class='container-fluid'>
+          <a class='navbar-brand fs-4 fw-bold text-white' href='/'>看我所見</a>
+          <button aria-controls='hamburger' aria-expanded='false' aria-label='Toggle navigation' class='navbar-toggler' data-bs-target='#hamburger' data-bs-toggle='collapse' type='button'>
+            <span class='navbar-toggler-icon'/>
+          </button>
+          <div class='collapse navbar-collapse' id='hamburger'>
+            <div class='navbar-nav flex-row'>
+              <a class='nav-link me-2' href='/p/support-us.html' style='color:orange;' target='_blank'>贊助</a>
+              <a class='nav-link me-2 active' href='/p/all-posts.html' target='_blank'>所有文章</a>
+              <a class='nav-link me-2 active' href='https://linktr.ee/5j_54d93' target='_blank'>社群連結</a>
+              <div class='navbar-nav nav-item dropdown'>
+                <a aria-expanded='false' class='nav-link dropdown active' data-bs-toggle='dropdown' href='#' id='navbarDropdown' role='button' style='display:block; border-radius:13%;'>
+                  <svg class='bi bi-three-dots-vertical' fill='currentColor' height='22' viewBox='0 0 18 18' width='22' xmlns='http://www.w3.org/2000/svg'>
+                    <path d='M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z'/>
+                  </svg>
+                </a>
+                <div aria-labelledby='navbarDropdown' class='dropdown-menu dropdown-menu-end dropdown-menu-sm-start' style='position:absolute !important;'>
+                  <p class='dropdown-header fs-6'>一般</p>
+                  <a class='dropdown-item' href='#PopularPosts1'>發燒文章</a>
+                  <hr class='dropdown-divider' style='color:rgb(205,217,229);'/>
+                  <p class='dropdown-header fs-6'>說明與法規</p>
+                  <a class='dropdown-item' href='/' target='_blank'>使用說明</a>
+                  <a class='dropdown-item' href='/p/privacy-policy.html' target='_blank'>隱私政策</a>
+                </div>
+              </div>
+            </div>
+            <div class='navbar-nav ms-md-auto'>
+              <form action='/search' class='d-flex me-1 my-1'>
+                <div class='input-group'>
+                  <input aria-label='Search' class='form-control search' name='q' placeholder='搜尋' required='required' style='background-color:#22272E; border-color:rgb(81,90,98); color:#ADBAC7;' type='search'/>
+                  <button class='btn btn-outline-secondary' data-bs-placement='bottom' data-bs-toggle='tooltip' title='搜尋文章' type='submit'>
+                    <svg class='bi bi-search' fill='white' height='17' viewBox='0 0 17 17' width='17' xmlns='http://www.w3.org/2000/svg'>
+                      <path d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class='navbar-nav flex-row flex-wrap ms-md-auto'>
+              <!--YT-->
+              <a class='btn btn-outline-danger yt-red me-1 my-1' data-bs-placement='bottom' data-bs-toggle='tooltip' href='https://www.youtube.com/channel/UC71TBGWnlb26oMC9uS2xnuw' role='button' target='_blank' title='YouTube'>
+                <svg class='bi bi-youtube' fill='currentColor' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z'/>
+                </svg>
+              </a>
+              <!--IG-->
+              <a class='btn btn-outline-danger ig-orange me-1 my-1' data-bs-placement='bottom' data-bs-toggle='tooltip' href='https://www.instagram.com/5j_54d93/' role='button' target='_blank' title='Instagram'>
+                <svg class='bi bi-instagram' fill='currentColor' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z'/>
+                </svg>
+              </a>
+              <!--Google Maps-->
+              <a class='btn btn-outline-success line-green me-1 my-1' data-bs-placement='bottom' data-bs-toggle='tooltip' href='https://maps.app.goo.gl/UZGou7XvCptory3v9?ltclid' role='button' target='_blank' title='Google Local Guide'>
+                <svg class='bi bi-geo-alt-fill' fill='currentColor' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z'/>
+                </svg>
+              </a>
+              <!--Twitter-->
+              <a class='btn btn-outline-secondary twitter-blue me-1 my-1' data-bs-placement='bottom' data-bs-toggle='tooltip' href='https://twitter.com/5j_54d93' role='button' target='_blank' title='Twitter'>
+                <svg class='bi bi-twitter' fill='currentColor' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z'/>
+                </svg>
+              </a>
+              <!--Facebook-->
+              <a class='btn btn-outline-secondary facebook-blue me-1 my-1' data-bs-placement='bottom' data-bs-toggle='tooltip' href='https://www.facebook.com/5j54d93/' role='button' target='_blank' title='Facebook'>
+                <svg class='bi bi-facebook' fill='currentColor' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z'/>
+                </svg>
+              </a>
+              <!--Twitch-->
+              <a class='btn btn-outline-secondary purple me-1 my-1' data-bs-placement='bottom' data-bs-toggle='tooltip' href='https://www.twitch.tv/5j_54d93' role='button' target='_blank' title='Twitch'>
+                <svg class='bi bi-twitch' fill='currentColor' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z'/>
+                  <path d='M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z'/>
+                </svg>
+              </a>
+              <!--GitHub-->
+              <a class='btn btn-outline-dark GitHub-white me-1 my-1' data-bs-placement='bottom' data-bs-toggle='tooltip' href='https://github.com/5j54d93' role='button' target='_blank' title='GitHub'>
+                <svg class='bi bi-github' fill='currentColor' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z'/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class='container'>
+    <b:section id='MostPopularPost'>
+      <b:widget cond='data:blog.url == data:blog.homepageUrl' id='PopularPosts0' locked='false' title='熱門文章' type='PopularPosts' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='numItemsToShow'>1</b:widget-setting>
+          <b:widget-setting name='showThumbnails'>true</b:widget-setting>
+          <b:widget-setting name='showSnippets'>true</b:widget-setting>
+          <b:widget-setting name='timeRange'>ALL_TIME</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+          <div class='widget-content popular-posts'>
+            <b:loop values='data:posts' var='post'>
+              <div class='alert alert-success mt-4' role='alert'>
+                <h6><span class='line-green'>發燒文章 #1</span><span class='text-muted'>&#12539;瀏覽次數&#65306;10.2 萬次&#12539;發布日期&#65306;2019 年 8 月 12 日</span></h6>
+                <header><h1 class='alert-heading fst-italic mb-3'><data:post.title/></h1></header>
+                <div style='text-align:justify;'><data:post.snippet/></div>
+                <div class='d-flex justify-content-end'>
+                  <a class='btn btn-outline-success line-green stretched-link mt-3' expr:href='data:post.href'>閱讀發燒文章</a>
+                </div>
+              </div>
+            </b:loop>
+          </div>
+        </b:includable>
+      </b:widget>
+    </b:section>
+    <div class='row mt-4'>
+      <div class='col-lg-8'>
+        <b:section id='BlogPost0'>
+          <b:widget id='Blog0' locked='false' title='網誌文章' type='Blog' version='1'>
+            <b:widget-settings>
+              <b:widget-setting name='commentLabel'>Comments</b:widget-setting>
+              <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+              <b:widget-setting name='authorLabel'>Posted by</b:widget-setting>
+              <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
+              <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+              <b:widget-setting name='reactionsLabel'/>
+              <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+              <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+              <b:widget-setting name='showLocation'>false</b:widget-setting>
+              <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+              <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+              <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+              <b:widget-setting name='showDateHeader'>false</b:widget-setting>
+              <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+              <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+              <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
+              <b:widget-setting name='postLocationLabel'>Location:</b:widget-setting>
+              <b:widget-setting name='showAuthor'>false</b:widget-setting>
+              <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
+              <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+              <b:widget-setting name='showLabels'>true</b:widget-setting>
+              <b:widget-setting name='postLabelsLabel'>Topic&#65306;</b:widget-setting>
+              <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+              <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+              <b:widget-setting name='showReactions'>false</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main' var='top'>
+              <!-- posts -->
+              <main class='blog-posts hfeed'>
+                <b:include data='top' name='status-message'/>
+                <b:if cond='data:blog.url != data:blog.homepageUrl and data:blog.pageType != &quot;item&quot; and data:blog.pageType != &quot;static_page&quot;'>
+                  <h4 class='alert alert-warning text-center' role='alert'>
+                    <b:switch var='data:blog.pageType'>
+                      <b:case value='archive'/>
+			there are <data:posts.length/> posts about&#12300;<data:blog.pageName/>&#12301;
+                      <b:case value='error_page'/>
+			404
+                      <b:case value='index'/>
+                        <b:if cond='data:blog.searchQuery'>
+                          <b:if cond='data:posts.length == 0'>
+			    there aren't any post about&#12300;<data:blog.searchQuery/>&#12301;😢
+                          <b:else/>
+			    there are <data:posts.length/> posts about&#12300;<data:blog.searchQuery/>&#12301;
+                          </b:if>
+                        </b:if>
+                        <b:if cond='data:blog.searchLabel'>
+			  there are <data:posts.length/> posts about&#12300;<data:blog.searchLabel/>&#12301;
+                        </b:if>
+                      <b:default/>
+                    </b:switch>
+                  </h4>
+                </b:if>
+                <b:loop index='index' values='data:posts' var='post'>
+                  <div class='post-outer'>
+                    <b:include data='post' name='post'/>
+                    <b:include cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}' data='post' name='comment_picker'/>
+                  </div>
+                  <!-- Ad -->
+                  <b:if cond='data:post.includeAd'>
+                    <div class='inline-ad'><data:adCode/></div>
+                  </b:if>
+                </b:loop>
+              </main>
+              <!-- navigation -->
+              <b:include name='nextprev'/>
+            </b:includable>
+            <b:includable id='backlinkDeleteIcon' var='backlink'/>
+            <b:includable id='backlinks' var='post'/>
+            <b:includable id='comment-form' var='post'>
+              <div class='comment-form'>
+                <h4 id='comment-post-message'>
+                  <svg class='bi bi-chat-left-fill' fill='currentColor' height='19' viewBox='0 0 17 17' width='19' xmlns='http://www.w3.org/2000/svg'>
+                    <path d='M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z'/>
+                  </svg>
+                  <data:postCommentMsg/>
+                </h4>
+                <p><data:blogCommentMessage/></p>
+                <data:blogTeamBlogMessage/>
+                <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+                <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+                <data:post.cmtfpIframe/>
+                <script>BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);</script>
+              </div>
+            </b:includable>
+            <b:includable id='commentDeleteIcon'/>
+            <b:includable id='comment_count_picker'/>
+            <b:includable id='comment_picker' var='post'>
+              <b:if cond='data:post.showThreadedComments'>
+                <b:include data='post' name='threaded_comments'/>
+              <b:else/>
+                <b:include data='post' name='comments'/>
+              </b:if>
+            </b:includable>
+            <b:includable id='comments' var='post'>
+              <div id='comments'>
+                <div class='card'>
+                  <div class='card-body'>
+                    <b:include data='post' name='comment-form'/>
+                    <p class='text-muted text-center'>If you can't commemt, try using Chrome instead.</p>
+                  </div>
+                </div>
+              </div>
+            </b:includable>
+            <b:includable id='feedLinks'/>
+            <b:includable id='feedLinksBody'/>
+            <b:includable id='iframe_comments'/>
+            <b:includable id='mobile-index-post'/>
+            <b:includable id='mobile-main'/>
+            <b:includable id='mobile-nextprev'/>
+            <b:includable id='mobile-post'/>
+            <b:includable id='nextprev'>
+              <div class='blog-pager' id='blog-pager'>
+                <b:if cond='data:newerPageUrl and data:view.isSingleItem'>
+                  <span id='blog-pager-newer-link'>
+                    <a class='btn btn-outline-primary me-2' expr:href='data:newerPageUrl' role='button'><data:newerPageTitle/></a>
+                  </span>
+                  <b:elseif cond='data:view.isSingleItem'/>
+                  <span id='blog-pager-newer-link'>
+                    <a class='btn btn-outline-secondary me-2 disabled' expr:href='data:newerPageUrl' role='button'>No newer post</a>
+                  </span>
+                </b:if>
+
+                <b:if cond='data:olderPageUrl and data:view.isSingleItem'>
+                  <span id='blog-pager-older-link'>
+                    <a class='btn btn-outline-primary ms-2' expr:href='data:olderPageUrl' role='button'><data:olderPageTitle/></a>
+                  </span>
+                  <b:elseif cond='data:view.isSingleItem'/>
+                  <span id='blog-pager-older-link'>
+                    <a class='btn btn-outline-secondary ms-2 disabled' expr:href='data:newerPageUrl' role='button'>No older post</a>
+                  </span>
+                </b:if>
+
+                <b:if cond='data:blog.url != data:blog.homepageUrl'>
+                  <a class='btn alert-warning d-grid' expr:href='data:blog.homepageUrl' role='button'><data:homeMsg/></a>
+                </b:if>
+
+              </div>
+            </b:includable>
+            <b:includable id='post' var='post'>
+              <div class='card mb-4'>
+                <article class='card-body'>
+                  <b:if cond='!data:view.isSingleItem and data:blog.url != data:blog.homepageUrl'>
+                    <div class='text-theme-color'>#<b:eval expr='data:index+1'/></div>
+                  </b:if>
+                  <header>
+                    <h1 class='card-title fs-3 fw-bold'><data:post.title/></h1>
+                    <h6 class='card-subtitle text-muted my-2' style='line-height:1.5;'>
+                      <data:post.timestamp/>
+                      <span>&#12539;<data:post.numComments/> comments</span>
+                      <span class='post-labels'>
+                        <b:if cond='data:top.showPostLabels and data:post.labels'>
+                          &#12539;<data:postLabelsLabel/>
+                          <b:loop values='data:post.labels' var='label'>
+                            <a class='badge rounded-pill' expr:href='data:label.url' rel='tag' role='button'><data:label.name/></a>
+                          </b:loop>
+                        </b:if>
+                      </span>
+                    </h6>
+                  </header>
+                  <b:if cond='data:view.isSingleItem'>
+                    <hr/>
+                    <data:post.body/>
+                    <!-- share buttons -->
+                    <div class='goog-inline-block d-flex flex-wrap justify-content-end'>
+                      <button class='btn btn-sm Share-btn my-1' data-bs-target='#shareModal' data-bs-toggle='modal'>
+                        <svg class='bi bi-share' fill='currentColor' height='18' viewBox='0 0 17 17' width='18' xmlns='http://www.w3.org/2000/svg'>
+                          <path d='M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z'/>
+                        </svg>
+                        Share
+                      </button>
+                      <div aria-hidden='true' aria-labelledby='shareModalLabel' class='modal fade' id='shareModal' tabindex='-1'>
+                        <div class='modal-dialog modal-dialog-centered'>
+                          <div class='modal-content'>
+                            <div class='modal-header'>
+                              <h5 class='modal-title text-dark' id='shareModalLabel'>Copy link</h5>
+                              <button aria-label='Close' class='btn-close' data-bs-dismiss='modal' id='closeWilltoCopyPostUrl' type='button'/>
+                            </div>
+                            <div class='modal-body'>
+                              <div class='d-flex'>
+                                <div class='flex-grow-1'>
+                                  <input class='form-control-plaintext form-control-sm' expr:value='data:post.url' id='sharePostUrl' readonly='readonly' style='background-color:rgb(247,248,250); padding-left: 10px; padding-right: 10px;' type='url'/>
+                                </div>
+                                <button class='btn btn-primary btn-sm ms-2' onclick='copyPostUrl()' type='button'>Copy</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <script>
+                        function copyPostUrl() {
+                          document.getElementById(&#39;closeWilltoCopyPostUrl&#39;).click();
+                          var url = document.getElementById(&#39;sharePostUrl&#39;);
+                          url.select();
+                          navigator.clipboard.writeText(url.value);
+                          new bootstrap.Toast(document.getElementById(&#39;liveToast1&#39;)).show();
+                        }
+                      </script>
+                      <div class='position-fixed bottom-0 end-0 p-3' style='width:320px; z-index:5;'>
+                        <div aria-atomic='true' aria-live='assertive' class='toast text-dark bg-white border hide' data-bs-animation='true' id='liveToast1' role='alert'>
+                          <div class='d-flex p-2'>
+                            <div class='toast-body'>
+                              Link copied to clipboard
+                            </div>
+                            <button aria-label='Close' class='btn-close me-2 m-auto' data-bs-dismiss='toast' type='button'/>
+                          </div>
+                        </div>
+                      </div>
+                      <span class='ms-2'>
+                      <b:include cond='data:post.sharePostUrl' data='post' name='shareButtons'/>
+                      </span>
+                    </div>
+                  <b:else/>
+                    <b:if cond='data:post.firstImageUrl'>
+                      <div class='d-flex align-items-center'>
+                        <div class='flex-grow-1 item-snippet mb-auto'><data:post.snippet/></div>
+                        <img class='flex-shrink-0 ms-3 img-thumbnail' expr:alt='data:post.title' expr:src='data:post.thumbnailUrl' loading='lazy'/>
+                      </div>
+                      <b:if cond='data:blog.url == data:blog.homepageUrl'>
+                        <a class='btn btn-outline-primary stretched-link d-grid mt-3' expr:href='data:post.link ? data:post.link : data:post.url'>Read newest post</a>
+                        <b:else/>
+                        <a class='btn btn-outline-primary stretched-link d-grid mt-3' expr:href='data:post.link ? data:post.link : data:post.url'>Read post</a>
+                      </b:if>
+                    <b:else/>
+                      <div class='item-snippet'><data:post.snippet/></div>
+                      <b:if cond='data:blog.url == data:blog.homepageUrl'>
+                        <a class='btn btn-outline-primary stretched-link d-grid mt-3' expr:href='data:post.link ? data:post.link : data:post.url'>Read newest post</a>
+                        <b:else/>
+                        <a class='btn btn-outline-primary stretched-link d-grid mt-3' expr:href='data:post.link ? data:post.link : data:post.url'>Read post</a>
+                      </b:if>
+                    </b:if>
+                  </b:if>
+                </article>
+              </div>
+            </b:includable>
+            <b:includable id='postQuickEdit'/>
+            <b:includable id='shareButtons' var='post'>
+              <!--Email-->
+              <a class='btn btn-sm btn-outline-danger yt-red me-1 my-1' data-bs-placement='bottom' data-bs-toggle='tooltip' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' role='button' target='_blank' title='用 Email 分享！'>
+                <svg class='bi bi-envelope-fill' fill='currentColor' height='18' viewBox='0 0 17 17' width='18' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z'/>
+                </svg>
+              </a>
+              <!--LINE-->
+              <a class='btn btn-sm btn-outline-danger line-green me-1 my-1' data-bs-placement='bottom' data-bs-toggle='tooltip' expr:href='&quot;https://social-plugins.line.me/lineit/share?url=&quot; + data:post.url' role='button' target='_blank' title='分享到 LINE！'>
+                <svg class='bi bi-line' fill='currentColor' height='18' viewBox='0 0 17 17' width='18' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0ZM5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.154.154 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157Zm.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156h-.562Zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832a.17.17 0 0 0-.013-.015v-.001a.139.139 0 0 0-.01-.01l-.003-.003a.092.092 0 0 0-.011-.009h-.001L7.88 4.79l-.003-.002a.029.029 0 0 0-.005-.003l-.008-.005h-.002l-.003-.002-.01-.004-.004-.002a.093.093 0 0 0-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.154.154 0 0 0 .039.038l.001.001.01.006.004.002a.066.066 0 0 0 .008.004l.007.003.005.002a.168.168 0 0 0 .01.003h.003a.155.155 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156h-.561Zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.155.155 0 0 0-.108.044h-.001l-.001.002-.002.003a.155.155 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.155.155 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z'/>
+                </svg>
+              </a>
+              <!--Twitter-->
+              <a class='btn btn-sm btn-outline-secondary twitter-blue me-1 my-1' data-bs-placement='bottom' data-bs-toggle='tooltip' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' role='button' target='_blank' title='分享到 Twitter！'>
+                <svg class='bi bi-twitter' fill='currentColor' height='18' viewBox='0 0 17 17' width='18' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z'/>
+                </svg>
+              </a>
+              <!--Facebook-->
+              <a class='btn btn-sm btn-outline-secondary facebook-blue me-1 my-1' data-bs-placement='bottom' data-bs-toggle='tooltip' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' role='button' target='_blank' title='分享到 Facebook！'>
+                <svg class='bi bi-facebook' fill='currentColor' height='18' viewBox='0 0 17 17' width='18' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z'/>
+                </svg>
+              </a>
+              <!--Messenger-->
+              <a class='btn btn-sm btn-outline-secondary purple my-1' data-bs-placement='bottom' data-bs-toggle='tooltip' expr:href='&quot;fb-messenger://share/?link=&quot; + data:post.url' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' role='button' target='_blank' title='分享到 Messenger！'>
+                <svg class='bi bi-messenger' fill='currentColor' height='18' viewBox='0 0 17 17' width='18' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z'/>
+                </svg>
+              </a>
+            </b:includable>
+            <b:includable id='status-message'/>
+            <b:includable id='threaded-comment-form' mobile='yes' var='post'>
+              <div class='comment-form'>
+                <p><data:blogCommentMessage/></p>
+                <data:blogTeamBlogMessage/>
+                <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+                <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+                <data:post.cmtfpIframe/>
+                <script>BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);</script>
+              </div>
+            </b:includable>
+            <b:includable id='threaded_comment_js' var='post'>
+              <script>
+                (function() {
+                var items = <data:post.commentJso/>;
+                var msgs = <data:post.commentMsgs/>;
+                var config = <data:post.commentConfig/>;
+
+                // <![CDATA[
+                      var cursor = null;
+                      if (items && items.length > 0) {
+                        cursor = parseInt(items[items.length - 1].timestamp) + 1;
+                      }
+
+                      var bodyFromEntry = function(entry) {
+                        var text = (entry &&
+                                    ((entry.content && entry.content.$t) ||
+                                     (entry.summary && entry.summary.$t))) ||
+                            '';
+                        if (entry && entry.gd$extendedProperty) {
+                          for (var k in entry.gd$extendedProperty) {
+                            if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
+                              return '<span class="deleted-comment">' + text + '</span>';
+                            }
+                          }
+                        }
+                        return text;
+                      }
+
+                      var parse = function(data) {
+                        cursor = null;
+                        var comments = [];
+                        if (data && data.feed && data.feed.entry) {
+                          for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
+                            var comment = {};
+                            // comment ID, parsed out of the original id format
+                            var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
+                            comment.id = id ? id[2] : null;
+                            comment.body = bodyFromEntry(entry);
+                            comment.timestamp = Date.parse(entry.published.$t) + '';
+                            if (entry.author && entry.author.constructor === Array) {
+                              var auth = entry.author[0];
+                              if (auth) {
+                                comment.author = {
+                                  name: (auth.name ? auth.name.$t : undefined),
+                                  profileUrl: (auth.uri ? auth.uri.$t : undefined),
+                                  avatarUrl: (auth.gd$image ? auth.gd$image.src : undefined)
+                                };
+                              }
+                            }
+                            if (entry.link) {
+                              if (entry.link[2]) {
+                                comment.link = comment.permalink = entry.link[2].href;
+                              }
+                              if (entry.link[3]) {
+                                var pid = /.*comments\/default\/(\d+)\?.*/.exec(entry.link[3].href);
+                                if (pid && pid[1]) {
+                                  comment.parentId = pid[1];
+                                }
+                              }
+                            }
+                            comment.deleteclass = 'item-control blog-admin';
+                            if (entry.gd$extendedProperty) {
+                              for (var k in entry.gd$extendedProperty) {
+                                if (entry.gd$extendedProperty[k].name == 'blogger.itemClass') {
+                                  comment.deleteclass += ' ' + entry.gd$extendedProperty[k].value;
+                                } else if (entry.gd$extendedProperty[k].name == 'blogger.displayTime') {
+                                  comment.displayTime = entry.gd$extendedProperty[k].value;
+                                }
+                              }
+                            }
+                            comments.push(comment);
+                          }
+                        }
+                        return comments;
+                      };
+
+                      var paginator = function(callback) {
+                        if (hasMore()) {
+                          var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
+                          if (cursor) {
+                            url += '&published-min=' + new Date(cursor).toISOString();
+                          }
+                          window.bloggercomments = function(data) {
+                            var parsed = parse(data);
+                            cursor = parsed.length < 50 ? null
+                                : parseInt(parsed[parsed.length - 1].timestamp) + 1
+                            callback(parsed);
+                            window.bloggercomments = null;
+                          }
+                          url += '&callback=bloggercomments';
+                          var script = document.createElement('script');
+                          script.type = 'text/javascript';
+                          script.src = url;
+                          document.getElementsByTagName('head')[0].appendChild(script);
+                        }
+                      };
+                      var hasMore = function() {
+                        return !!cursor;
+                      };
+                      var getMeta = function(key, comment) {
+                        if ('iswriter' == key) {
+                          var matches = !!comment.author
+                              && comment.author.name == config.authorName
+                              && comment.author.profileUrl == config.authorUrl;
+                          return matches ? 'true' : '';
+                        } else if ('deletelink' == key) {
+                          return config.baseUri + '/delete-comment.g?blogID='
+                               + config.blogId + '&postID=' + comment.id;
+                        } else if ('deleteclass' == key) {
+                          return comment.deleteclass;
+                        }
+                        return '';
+                      };
+
+                      var replybox = null;
+                      var replyUrlParts = null;
+                      var replyParent = undefined;
+
+                      var onReply = function(commentId, domId) {
+                        if (replybox == null) {
+                          // lazily cache replybox, and adjust to suit this style:
+                          replybox = document.getElementById('comment-editor');
+                          if (replybox != null) {
+                            replybox.height = '250px';
+                            replybox.style.display = 'block';
+                            replyUrlParts = replybox.src.split('#');
+                          }
+                        }
+                        if (replybox && (commentId !== replyParent)) {
+                          replybox.src = '';
+                          document.getElementById(domId).insertBefore(replybox, null);
+                          replybox.src = replyUrlParts[0]
+                              + (commentId ? '&parentID=' + commentId : '')
+                              + '#' + replyUrlParts[1];
+                          replyParent = commentId;
+                        }
+                      };
+
+                      var hash = (window.location.hash || '#').substring(1);
+                      var startThread, targetComment;
+                      if (/^comment-form_/.test(hash)) {
+                        startThread = hash.substring('comment-form_'.length);
+                      } else if (/^c[0-9]+$/.test(hash)) {
+                        targetComment = hash.substring(1);
+                      }
+
+                      // Configure commenting API:
+                      var configJso = {
+                        'maxDepth': config.maxThreadDepth
+                      };
+                      var provider = {
+                        'id': config.postId,
+                        'data': items,
+                        'loadNext': paginator,
+                        'hasMore': hasMore,
+                        'getMeta': getMeta,
+                        'onReply': onReply,
+                        'rendered': true,
+                        'initComment': targetComment,
+                        'initReplyThread': startThread,
+                        'config': configJso,
+                        'messages': msgs
+                      };
+
+                      var render = function() {
+                        if (window.goog && window.goog.comments) {
+                          var holder = document.getElementById('comment-holder');
+                          window.goog.comments.render(holder, provider);
+                        }
+                      };
+
+                      // render now, or queue to render when library loads:
+                      if (window.goog && window.goog.comments) {
+                        render();
+                      } else {
+                        window.goog = window.goog || {};
+                        window.goog.comments = window.goog.comments || {};
+                        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
+                        window.goog.comments.loadQueue.push(render);
+                      }
+                    })();
+                // ]]>
+              </script>
+            </b:includable>
+            <b:includable id='threaded_comments' var='post'>
+              <div class='comments' id='comments'>
+                <div class='card'>
+                  <div class='card-body'>
+                    <h4>
+                      <svg class='bi bi-chat-left-fill' fill='currentColor' height='19' viewBox='0 0 17 17' width='19' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z'/>
+                      </svg>
+                      <data:post.commentLabelFull/>
+                    </h4>
+                    <div class='comments-content'>
+                      <b:include cond='data:post.embedCommentForm' data='post' name='threaded_comment_js'/>
+                      <div id='comment-holder'>
+                        <data:post.commentHtml/>
+                      </div>
+                    </div>
+
+                    <p class='comment-footer'>
+                      <b:if cond='data:post.allowNewComments'>
+                        <b:include data='post' name='threaded-comment-form'/>
+                        <b:else/>
+                        <data:post.noNewCommentsText/>
+                      </b:if>
+                    </p>
+
+                    <b:if cond='data:showCmtPopup'>
+                      <div id='comment-popup'>
+                        <iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'/>
+                      </div>
+                    </b:if>
+                    <p class='text-muted text-center'>If you can't comment, try using Chrome instead.</p>
+                  </div>
+                </div>
+              </div>
+            </b:includable>
+          </b:widget>
+        </b:section>
+        <b:section id='BlogPost1'>
+          <b:widget id='PopularPosts1' locked='true' title='熱門文章' type='PopularPosts' version='1'>
+            <b:widget-settings>
+              <b:widget-setting name='numItemsToShow'>10</b:widget-setting>
+              <b:widget-setting name='showThumbnails'>true</b:widget-setting>
+              <b:widget-setting name='showSnippets'>true</b:widget-setting>
+              <b:widget-setting name='timeRange'>LAST_MONTH</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+              <div class='widget-content popular-posts row mb-4 g-4'>
+                <b:loop index='index' values='data:posts' var='post'>
+                  <div class='col-lg-6'>
+                    <div class='card h-100'>
+                      <div class='card-body d-flex flex-column'>
+                        <div class='text-theme-color'>#<b:eval expr='data:index+1'/></div>
+                        <header><h4 class='card-title fw-bold'><data:post.title/></h4></header>
+                        <div class='item-snippet my-3'><data:post.snippet/></div>
+                        <a class='btn btn-outline-primary stretched-link d-grid mt-auto' expr:href='data:post.href'>Read popular post this month</a>
+                      </div>
+                    </div>
+                  </div>
+                </b:loop>
+              </div>
+            </b:includable>
+          </b:widget>
+        </b:section>
+      </div>
+      <aside class='col-lg-4'>
+        <div class='position-sticky' style='top:5.5rem;'>
+          <div class='card p-4 mb-4'>
+            <h4 class='fw-bold'>About</h4>
+            <p class='mb-2'>本網站成立於 2019 年 7 月 17 日&#12290;累計有 146 篇文章&#65281;分享筆者的生活經歷與特殊經驗&#65281;</p>
+            <b:section id='ViewsCount'>
+              <b:widget id='Stats0' locked='false' title='總網頁瀏覽量' type='Stats' version='1'>
+                <b:widget-settings>
+                  <b:widget-setting name='showGraphicalCounter'>false</b:widget-setting>
+                  <b:widget-setting name='showAnimatedCounter'>false</b:widget-setting>
+                  <b:widget-setting name='showSparkline'>false</b:widget-setting>
+                  <b:widget-setting name='sparklineStyle'>BLACK_TRANSPARENT</b:widget-setting>
+                  <b:widget-setting name='timeRange'>ALL_TIME</b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main'>
+                  <hr/>
+                  <h4 class='fw-bold'>View Counts</h4>
+                  <div class='widget-content' style='color:#03C755;'>
+                    <!-- Content is going to be visible when data will be fetched from server. -->
+                    <div expr:id='data:widget.instanceId + &quot;_content&quot;' style='display: none;'>
+                      <!-- Counter and image will be injected later via AJAX call. -->
+                      <span expr:class='&quot;counter-wrapper &quot; + (data:showGraphicalCounter ? &quot;graph-counter-wrapper&quot; : &quot;text-counter-wrapper&quot;)' expr:id='data:widget.instanceId + &quot;_totalCount&quot;'>
+                      </span>
+                    </div>
+                  </div>
+                  <hr/>
+                  <h4 class='fw-bold'>Followers</h4>
+                </b:includable>
+              </b:widget>
+            </b:section>
+            <b:section id='Followers'>
+              <b:widget id='Followers1' locked='false' title='' type='Followers'>
+                <b:widget-settings>
+                  <b:widget-setting name='borderColorTransparent'>true</b:widget-setting>
+                  <b:widget-setting name='useTemplateDefaultStyles'>true</b:widget-setting>
+                  <b:widget-setting name='contentSecondaryTextColor'>#000000</b:widget-setting>
+                  <b:widget-setting name='contentHeadlineColor'>#000000</b:widget-setting>
+                  <b:widget-setting name='endcapTextColor'>#000000</b:widget-setting>
+                  <b:widget-setting name='contentTextColor'>#000000</b:widget-setting>
+                  <b:widget-setting name='contentSecondaryLinkColor'>#FFFFFF</b:widget-setting>
+                  <b:widget-setting name='endcapLinkColor'>#000000</b:widget-setting>
+                  <b:widget-setting name='contentLinkColor'>#000000</b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main'>
+                  <b:if cond='data:title != &quot;&quot; and data:codeSnippet != &quot;&quot;'>
+                    <h2 class='title'><data:title/></h2>
+                  </b:if>
+                  <div class='widget-content'>
+                    <div expr:id='data:widget.instanceId + &quot;-wrapper&quot;'>
+                      <b:if cond='data:codeSnippet != &quot;&quot;'>
+                        <div style='margin-right:2px;'>
+                          <data:codeSnippet/>
+                        </div>
+                      </b:if>
+                    </div>
+                    <b:include name='quickedit'/>
+                  </div>
+                </b:includable>
+              </b:widget>
+            </b:section>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <footer class='text-muted py-3 mt-4 border-top'>
+    <div class='container'>
+      <p class='text-center'>
+        Copyright &#169; 2022 看我所見&#65372;
+        <a href='/'>首頁</a>&#65372;
+        <a href='/p/support-us.html' target='_blank'>贊助</a>&#65372;
+        <a href='#PopularPosts1'>發燒文章</a>&#65372;
+        <a href='https://linktr.ee/5j_54d93' target='_blank'>社群連結</a>&#65372;
+        <a href='/p/all-posts.html' target='_blank'>所有文章</a>&#65372;
+        <a href='/' target='_blank'>使用說明</a>&#65372;
+        <a href='/p/privacy-policy.html' target='_blank'>隱私政策</a>&#65372;
+        Designed with &#10084;&#65039; by Ricky Chuang
+      </p>
+    </div>
+  </footer>
+  <script crossorigin='anonymous' integrity='sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js'/>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll(&#39;[data-bs-toggle=&quot;tooltip&quot;]&#39;))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+#PageContainer {
+  max-width: 980px;
+  margin-bottom: 60px;
+  transition: all .35s ease;
+}
+#contactTitle {
+  height: 68px;
+  color: #1d1d1f;
+  font-size: 56px;
+  font-weight: 600;
+  margin-top: 80px;
+  line-height: 68px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+#contactTitle2 {
+  height: 44px;
+  color: #1d1d1f;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 44px;
+}
+.contactTitle3 {
+  height: 32px;
+  color: #1d1d1f;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-top: 33.6px;
+  margin-bottom: 11.2px;
+}
+/* 螢幕小於 1068 */
+@media only screen and (max-width: 1068px) {
+  #PageContainer {
+    width: 692px;
+  }
+  #contactTitle {
+    height: 52px;
+    font-size: 40px;
+    line-height: 52px;
+  }
+  #contactTitle2 {
+    height: 36px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .contactTitle3 {
+    height: 28px;
+    font-size: 21px;
+    line-height: 28px;
+    margin-top: 28.8px;
+    margin-bottom: 9.6px;
+  }
+}
+/* 螢幕小於 734 */
+@media only screen and (max-width: 734px) {
+  #PageContainer {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  #contactTitle {
+    height: 39px;
+    margin-left: 0;
+    font-size: 32px;
+    margin-top: 60px;
+    font-weight: 500;
+    line-height: 39px;
+    margin-bottom: 60px;
+  }
+  #contactTitle2 {
+    height: 32px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .contactTitle3 {
+    height: 25px;
+    font-size: 19px;
+    line-height: 25px;
+    margin-top: 25.2px;
+    margin-bottom: 8.4px;
+  }
+}

@@ -1,0 +1,478 @@
+img {
+  pointer-events: none;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 52px 0 16px;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.invitationContainer p,
+ul {
+  color: #1d1d1f;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 27px;
+}
+table {
+  font-size: 17px;
+  margin-bottom: 27px !important;
+  --bs-table-border-color: #d2d2d7;
+}
+#smallLogo {
+  font-size: 19px;
+  font-weight: 500;
+  margin-top: 80px;
+  margin-bottom: 24px;
+  transition: all .3s ease;
+}
+#title {
+  width: 817px;
+  color: #1d1d1f;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+#subTitle {
+  width: 653px;
+  color: #1d1d1f;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 31px;
+  margin-bottom: 80px;
+}
+#copyInvitationCodeBtn {
+  cursor: pointer;
+  margin-left: 5px;
+  line-height: 18px;
+  -webkit-text-stroke: 1px;
+  transition: all 0.3s ease 0s;
+}
+.hadCopyTip {
+  opacity: 0;
+  border-radius: 3px;
+  pointer-events: none;
+  background-color: #1d1d1f;
+  transition: all 0.3s ease 0s;
+}
+@keyframes shimmer {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
+.loadingImgContainer {
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  background-size: 200% 100% !important;
+  animation: shimmer 2s linear infinite;
+  background: #fafafa linear-gradient(to right, #fafafa 0%, #e8e8ed 20%, #fafafa 40%, #fafafa 100%);
+}
+.imgContainer {
+  width: 980px;
+}
+.imgCaptionContainer {
+  gap: 24px;
+  max-width: 653px;
+  margin-top: 16px;
+  margin-bottom: 44px;
+  transition: all .35s ease;
+}
+.imgCaption {
+  color: #6e6e73;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.reloadImgBtn {
+  width: 24px;
+  height: 24px;
+  color: #161617;
+  font-size: 13px;
+  margin-top: -4px;
+  background-color: #f5f5f7;
+  -webkit-text-stroke: 0.6px;
+  --bs-btn-hover-bg: #e8e8e8;
+}
+#topSectionContainer {
+  gap: 24px;
+  max-width: 653px;
+  margin-top: 80px;
+  margin-bottom: 44px;
+  transition: all .35s ease;
+}
+#topSectionTag {
+  color: #f5f5f7;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 3px 8px;
+  line-height: 18px;
+  border-radius: 16px;
+}
+#topSectionDate {
+  color: #6e6e73;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 23px;
+  margin-left: 12px;
+}
+.shareBtn {
+  font-size: 18px;
+  cursor: pointer;
+  --bs-btn-color: #6e6e73;
+  --bs-btn-hover-color: #1d1d1f;
+  --bs-link-color-rgb: 110, 110, 115;
+  --bs-link-hover-color-rgb: 29, 29, 31;
+}
+.invitationContainer {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 653px;
+  transition: all .35s ease;
+}
+#invitationTopSectionHr {
+  color: #d7d7d7;
+  margin: 44px 0;
+}
+.invitationNotice {
+  padding: 16px;
+  margin-bottom: 27px;
+  border-radius: 15px;
+  --bs-border-width: 0.87px;
+  background-color: #f5f5f7;
+  --bs-border-color: #696969;
+  box-shadow: 0 0 1px 0 #696969 inset, 0 0 1px 0 #696969;
+}
+.invitationNoticeTitle {
+  height: 26px;
+  color: #696969;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 6.8px;
+}
+.invitationTableContainer {
+  padding: 0;
+  font-size: 17px;
+  font-weight: 300;
+  max-width: 980px;
+  margin-bottom: 27px;
+  transition: all .35s ease;
+}
+#shareTitle {
+  color: #1d1d1f;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 44px;
+  line-height: 23px;
+  margin-bottom: 8px;
+}
+#shareBtnsBottomContainer {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#invitationTopicAndDonate {
+  margin: 44px 0;
+  border-radius: 10px;
+  background-color: #f5f5f7;
+}
+#invitationTopicContainer,
+#invitationDonateContainer {
+  gap: 12px;
+  padding: 36px;
+}
+.invitationTopicAndDonateTitle {
+  color: #1d1d1f;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 23px;
+}
+.invitationTopicLink {
+  line-height: 20px;
+  padding: 8px 16px;
+  width: auto !important;
+  height: auto !important;
+  transition: all .35s ease;
+  color: #1d1d1f !important;
+  min-width: auto !important;
+  font-size: 13px !important;
+  min-height: auto !important;
+  font-weight: 500 !important;
+  border-radius: 30px !important;
+}
+.invitationTopicLink:hover {
+  box-shadow: unset !important;
+  background: #e8e8ed !important;
+}
+#invitationTopicAndDonateHr {
+  color: white;
+  margin: 0 36px;
+}
+.swg-button-v2-icon-dark, .swg-button-v2-icon-light {
+  margin-left: 0 !important;
+}
+#underTopicAndDonateHr {
+  color: #d7d7d7;
+  margin: 52px 0;
+}
+#contactsContainer {
+  margin: 52px 0;
+}
+#contactsTitle {
+  color: #1d1d1f;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 28px;
+}
+.contactsName {
+  color: #1d1d1f;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  margin-bottom: 4px;
+}
+#floatCapsuleLink {
+  gap: 16px;
+  padding: 10px;
+  margin-top: 30px;
+  max-width: 87.5%;
+  border-radius: 32px;
+  backdrop-filter: blur(7px);
+  background-color: #e8e8edb3;
+  -webkit-backdrop-filter: blur(7px);
+  transform: translateY(0) scale(0, 0);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+}
+#floatCapsuleLink:hover #floatCapsuleIcon {
+  color: #ffffff;
+}
+#floatCapsuleText {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  padding-left: 14px;
+  color: rgb(29,29,31);
+  transition: all .3s ease;
+}
+#floatCapsuleIcon {
+  font-size: 20px;
+  color: #ffffffcc;
+  border-radius: 50px;
+  -webkit-text-stroke: 2px;
+  transition: all .3s ease;
+  padding: 3px 6.8px 3px 9.2px;
+}
+#learnMore {
+  padding: 52px 0;
+  background-color: #fbfbfd;
+}
+#learnMoreText {
+  color: #6e6e73;
+  font-size: 17px;
+  font-weight: 450;
+  line-height: 23px;
+  margin-bottom: 18px;
+}
+#learnMoreBtn {
+  color: #161617;
+  font-size: 14px;
+  font-weight: 450;
+  border-radius: 30px;
+  transition: all .3s ease;
+  background-color: #e8e8ed;
+}
+#learnMoreBtn:hover {
+  background-color: #d2d2d7;
+}
+/* 螢幕小於 1068 */
+@media only screen and (max-width: 1068px) {
+  h2 {
+    font-size: 21px;
+    line-height: 25px;
+    margin: 48px 0 16px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .invitationContainer p,
+  ul {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 24px;
+  }
+  table {
+    font-size: 15px;
+    margin-bottom: 24px !important;
+  }
+  #title {
+    width: 692px;
+    font-size: 38px;
+    line-height: 52px;
+  }
+  #subTitle {
+    width: 576px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 64px;
+  }
+  .imgCaptionContainer {
+    max-width: 576px;
+    margin-top: 12px;
+    margin-bottom: 36px;
+  }
+  #topSectionContainer {
+    max-width: 576px;
+    margin-top: 62px;
+    margin-bottom: 36px;
+  }
+  #topSectionTag {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 6px;
+    line-height: 16px;
+  }
+  #topSectionDate {
+    font-size: 14px;
+    margin-left: 8px;
+    line-height: 19px;
+  }
+  .invitationContainer {
+    max-width: 576px;
+  }
+  #invitationTopSectionHr {
+    margin: 36px 0;
+  }
+  .imgContainer {
+    width: 692px;
+  }
+  .invitationNotice {
+    margin-bottom: 24px;
+  }
+  .invitationTableContainer {
+    max-width: 692px;
+    margin-bottom: 24px;
+  }
+  #shareTitle {
+    font-size: 16px;
+    margin-top: 36px;
+  }
+  #shareBtnsBottomContainer {
+    margin-bottom: 36px;
+  }
+  #invitationTopicAndDonate {
+    margin: 36px 0;
+  }
+  #invitationTopicContainer,
+  #invitationDonateContainer {
+    padding: 32px;
+  }
+  .invitationTopicAndDonateTitle {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  #invitationTopicAndDonateHr {
+    margin: 0 32px;
+  }
+  #underTopicAndDonateHr,
+  #contactsContainer {
+    margin: 48px 0;
+  }
+  #contactsTitle {
+    font-size: 21px;
+    line-height: 25px;
+  }
+  .contactsName {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  #learnMore {
+    padding: 48px 0;
+  }
+  #learnMoreText {
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 14px;
+  }
+}
+/* 螢幕小於 734 */
+@media only screen and (max-width: 734px) {
+  h2 {
+    margin: 44px 0 16px;
+  }
+  .invitationContainer p,
+  ul {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 24px;
+  }
+  #smallLogo {
+    margin-top: 60px;
+  }
+  #title {
+    width: 87.5%;
+    max-width: 414px;
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+  #subTitle {
+    width: 87.5%;
+    max-width: 414px;
+    margin-bottom: 52px;
+  }
+  .imgCaptionContainer {
+    width: 87.5%;
+    margin-bottom: 32px;
+  }
+  #topSectionContainer {
+    width: 87.5%;
+    margin-top: 52px;
+    margin-bottom: 32px;
+  }
+  .invitationContainer {
+    width: 87.5%;
+  }
+  #invitationTopSectionHr {
+    margin: 32px 0;
+  }
+  .imgContainer {
+    width: 100%;
+  }
+  .loadingImgContainer,
+  .invitaionImg {
+    border-radius: 0 !important;
+  }
+  #floatCapsuleText {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .invitaionTableContainer {
+    max-width: 454px;
+  }
+  #shareTitle {
+    margin-top: 32px;
+  }
+  #shareBtnsBottomContainer {
+    margin-bottom: 32px;
+  }
+  #invitationTopicAndDonate {
+    margin: 32px 0;
+  }
+  #invitationTopicContainer,
+  #invitationDonateContainer {
+    padding: 24px;
+  }
+  #underTopicAndDonateHr,
+  #contactsContainer {
+    margin: 44px 0;
+  }
+  #learnMore {
+    padding: 44px 0;
+  }
+}

@@ -1,0 +1,105 @@
+#searchPageContainer {
+  width: 980px;
+}
+#searchPageResultCountText {
+  color: #6e6e73;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px;
+  margin: 40px 0px 32px;
+}
+.searchPagePost {
+  padding: 32px 0px;
+}
+.searchPagePostImg {
+  width: 295px;
+  height: 166px;
+  border-radius: 16px;
+  background-color: #fafafa;
+}
+.searchPagePostTextContainer {
+  margin-left: 32px;
+}
+.searchPagePostTitle {
+  color: #1d1d1f;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 8px 0px 12px;
+}
+.searchPagePostDate {
+  color: #6e6e73;
+  font-size: 13px;
+  font-weight: 450;
+  line-height: 20px;
+}
+#searchPageResultEndText {
+  color: #1d1d1f;
+  font-size: 17px;
+  margin: 60px 0px;
+  font-weight: 400;
+  line-height: 25px;
+}
+#searchPageResultNone {
+  color: #1d1d1f;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 48px;
+}
+/* 螢幕小於 1068 */
+@media only screen and (max-width: 1068px) {
+  #searchPageContainer {
+    width: 692px;
+  }
+  #searchPageResultCountText {
+    margin: 40px 0px 24px;
+  }
+  .searchPagePost {
+    padding: 24px 0px;
+  }
+  .searchPagePostImg {
+    width: 264px;
+    height: 149px;
+  }
+  .searchPagePostTextContainer {
+    margin-left: 24px;
+  }
+  .searchPagePostTitle {
+    font-size: 19px;
+    line-height: 25px;
+  }
+  #searchPageResultNone {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 40px;
+  }
+}
+/* 螢幕小於 734 */
+@media only screen and (max-width: 734px) {
+  #searchPageContainer {
+    width: 87.5%;
+  }
+  #searchPageResultCountText {
+    margin: 32px 0px 24px;
+  }
+  .searchPagePostImg {
+    width: 106px;
+    height: 60px;
+    border-radius: 7px;
+  }
+  .searchPagePostTitle {
+    font-size: 15px;
+    line-height: 21px;
+    margin: 4px 0px 8px;
+  }
+  .searchPagePostDate {
+    line-height: 18px;
+  }
+  #searchPageResultEndText {
+    margin: 45px 0px;
+  }
+  #searchPageResultNone {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

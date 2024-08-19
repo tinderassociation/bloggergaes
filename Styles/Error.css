@@ -1,0 +1,60 @@
+#errorPageContainer {
+  width: 980px;
+  margin-top: 92px;
+  margin-bottom: 140px;
+}
+#errorPageTitle {
+  color: #1d1d1f;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 54px;
+}
+#errorPageSearchForm {
+  width: 490px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  border-color: #d6d6d6;
+  --bs-body-bg: #00000000;
+}
+#errorPageSearchInput {
+  color: #333333;
+  font-size: 17px;
+  padding-left: 3px;
+}
+#errorPageSitemapLink {
+  color: #0066cc;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+}
+#errorPageSitemapLink:hover {
+  text-decoration: underline;
+}
+/* 螢幕小於 1068 */
+@media only screen and (max-width: 1068px) {
+  #errorPageContainer {
+    width: 692px;
+    margin-top: 90px;
+    margin-bottom: 120px;
+  }
+  #errorPageTitle {
+    font-size: 40px;
+    margin-bottom: 45px;
+  }
+}
+/* 螢幕小於 735 */
+@media only screen and (max-width: 735px) {
+  #errorPageContainer {
+    width: 87.5%;
+    margin-top: 45px;
+    margin-bottom: 60px;
+  }
+  #errorPageTitle {
+    font-size: 32px;
+    max-width: 330px;
+    margin-bottom: 35px;
+  }
+  #errorPageSearchForm {
+    width: auto;
+  }
+}
